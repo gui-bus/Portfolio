@@ -2,7 +2,6 @@ import { MainClientLayout } from "@/components/common/mainClientLayout";
 import { HeroSection } from "@/components/sections/heroSection";
 import { MethodologySection } from "@/components/sections/methodologySection";
 import { ServicesSection } from "@/components/sections/servicesSection";
-import { ProjectsSection } from "@/components/sections/projectsSection";
 import { TechStackSection } from "@/components/sections/techStackSection";
 import { WorkflowSection } from "@/components/sections/workflowSection";
 import { ContactSection } from "@/components/sections/contactSection";
@@ -15,7 +14,6 @@ export default function Portfolio() {
         <HeroSection />
         <MethodologySection />
         <ServicesSection />
-        <ProjectsSection />
         <TechStackSection />
         <WorkflowSection />
         <ContactSection />

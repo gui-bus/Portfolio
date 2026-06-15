@@ -6,12 +6,14 @@ import { ArrowUpIcon } from "@phosphor-icons/react";
 import { Logo } from "./logo";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
+const portfolioUrl = "https://portfolio.magui.studio";
+
 export function Footer() {
   const t = useTranslations("Footer");
   const tHeader = useTranslations("Header");
 
   const navItems = [
-    { key: "work", href: "#projects" },
+    { key: "work", href: portfolioUrl },
     { key: "about", href: "#methodology" },
     { key: "services", href: "#services" },
     { key: "contact", href: "#contact" },

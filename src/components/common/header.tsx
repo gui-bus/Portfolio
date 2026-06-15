@@ -11,6 +11,8 @@ import { fadeIn } from "@/lib/animations";
 import { Logo } from "./logo";
 import Link from "next/link";
 
+const portfolioUrl = "https://portfolio.magui.studio";
+
 interface NavItemProps {
   item: { key: string; href: string };
   t: (key: string) => string;
@@ -19,10 +21,14 @@ interface NavItemProps {
 }
 
 function NavItem({ item, t, active, onClick }: NavItemProps) {
+  const isExternal = item.href.startsWith("http");
+
   return (
     <Link
       href={item.href}
       onClick={onClick}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noreferrer" : undefined}
       className={cn(
         "text-[10px] font-mono font-black transition-all relative group uppercase tracking-[0.2em] flex items-center gap-2 py-2",
         active
@@ -78,7 +84,7 @@ export function Header({ onStartProject }: HeaderProps) {
   const navItems = [
     { key: "about", href: "#methodology" },
     { key: "services", href: "#services" },
-    { key: "work", href: "#projects" },
+    { key: "work", href: portfolioUrl },
     { key: "contact", href: "#contact" },
   ];
 
@@ -113,7 +119,7 @@ export function Header({ onStartProject }: HeaderProps) {
       observerCallback,
       observerOptions,
     );
-    const sections = ["methodology", "services", "projects", "contact"];
+    const sections = ["methodology", "services", "contact"];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -211,30 +217,36 @@ export function Header({ onStartProject }: HeaderProps) {
                 Navigation_Menu
               </span>
               <div className="flex flex-col gap-6">
-                {navItems.map((item, index) => (
-                  <motion.div
-                    key={item.key}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <a
-                      href={item.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className={cn(
-                        "text-4xl font-black uppercase tracking-tighter transition-colors flex items-center gap-4 group",
-                        activeSection === item.href.replace("#", "")
-                          ? "text-yellow-600 dark:text-yellow-500"
-                          : "text-foreground hover:text-yellow-600 dark:hover:text-yellow-500",
-                      )}
+                {navItems.map((item, index) => {
+                  const isExternal = item.href.startsWith("http");
+
+                  return (
+                    <motion.div
+                      key={item.key}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 }}
                     >
-                      <span className="text-xs font-mono tracking-widest text-muted-foreground/40 group-hover:text-yellow-600/40">
-                        0{index + 1}
-                      </span>
-                      {t(item.key)}
-                    </a>
-                  </motion.div>
-                ))}
+                      <a
+                        href={item.href}
+                        target={isExternal ? "_blank" : undefined}
+                        rel={isExternal ? "noreferrer" : undefined}
+                        onClick={() => setIsMenuOpen(false)}
+                        className={cn(
+                          "text-4xl font-black uppercase tracking-tighter transition-colors flex items-center gap-4 group",
+                          activeSection === item.href.replace("#", "")
+                            ? "text-yellow-600 dark:text-yellow-500"
+                            : "text-foreground hover:text-yellow-600 dark:hover:text-yellow-500",
+                        )}
+                      >
+                        <span className="text-xs font-mono tracking-widest text-muted-foreground/40 group-hover:text-yellow-600/40">
+                          0{index + 1}
+                        </span>
+                        {t(item.key)}
+                      </a>
+                    </motion.div>
+                  );
+                })}
               </div>
             </div>
 

@@ -133,7 +133,6 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 35, stiffness: 250 }}
           >
-            {/* Cinematic Background Glow */}
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-[100px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-amber-500/5 rounded-full blur-[80px] pointer-events-none" />
 
@@ -141,7 +140,11 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
               onClick={onClose}
               className="absolute top-8 right-8 text-muted-foreground hover:text-yellow-600 transition-all z-20 group"
             >
-              <XIcon size={32} weight="thin" className="group-hover:rotate-90 transition-transform duration-500" />
+              <XIcon
+                size={32}
+                weight="thin"
+                className="group-hover:rotate-90 transition-transform duration-500"
+              />
             </button>
 
             {isSuccess ? (
@@ -375,7 +378,10 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
                     className="w-full py-8 bg-yellow-600 text-white font-black text-xs md:text-sm uppercase tracking-[0.5em] flex items-center justify-center gap-6 hover:bg-foreground dark:hover:bg-white dark:hover:text-black transition-all shadow-[0_20px_40px_rgba(202,138,4,0.2)] disabled:opacity-50 disabled:cursor-not-allowed group"
                   >
                     {isSubmitting ? t("btn_sending") : t("btn_send")}{" "}
-                    <ArrowRightIcon size={20} className="group-hover:translate-x-2 transition-transform duration-500" />
+                    <ArrowRightIcon
+                      size={20}
+                      className="group-hover:translate-x-2 transition-transform duration-500"
+                    />
                   </button>
                 </form>
               </div>

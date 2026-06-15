@@ -15,6 +15,8 @@ import { ScrollArrowClient } from "./heroScrollArrowClient";
 import Link from "next/link";
 import Image from "next/image";
 
+const portfolioUrl = "https://portfolio.magui.studio";
+
 export async function HeroSection() {
   const t = await getTranslations("Hero");
 
@@ -108,7 +110,7 @@ export async function HeroSection() {
                       </span>
                     </div>
                     <Link
-                      href="#projects"
+                      href={portfolioUrl}
                       className="flex items-center gap-2 group cursor-pointer"
                     >
                       <span className="text-[10px] font-mono uppercase tracking-widest font-black group-hover:text-yellow-600 transition-colors">
