@@ -6,7 +6,7 @@ import { ArrowUpIcon } from "@phosphor-icons/react";
 import { Logo } from "./logo";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
 
-const portfolioUrl = "https://portfolio.magui.studio";
+const portfolioUrl = "https://github.com/gui-bus";
 
 export function Footer() {
   const t = useTranslations("Footer");

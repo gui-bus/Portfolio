@@ -11,7 +11,7 @@ import { fadeIn } from "@/lib/animations";
 import { Logo } from "./logo";
 import Link from "next/link";
 
-const portfolioUrl = "https://portfolio.magui.studio";
+const portfolioUrl = "https://github.com/gui-bus";
 
 interface NavItemProps {
   item: { key: string; href: string };

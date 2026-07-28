@@ -15,7 +15,7 @@ import { ScrollArrowClient } from "./heroScrollArrowClient";
 import Link from "next/link";
 import Image from "next/image";
 
-const portfolioUrl = "https://portfolio.magui.studio";
+const portfolioUrl = "https://github.com/gui-bus";
 
 export async function HeroSection() {
   const t = await getTranslations("Hero");
@@ -133,7 +133,7 @@ export async function HeroSection() {
                       src="/images/profile.jpg"
                       alt={t("branding")}
                       fill
-                      className="object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                      className="object-cover transition-all duration-700 scale-105 group-hover:scale-100"
                       priority
                     />
                   </div>

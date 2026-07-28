@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowDownIcon } from "@phosphor-icons/react";
 
-const portfolioUrl = "https://portfolio.magui.studio";
+const portfolioUrl = "https://github.com/gui-bus";
 
 export function ScrollArrowClient() {
   return (
