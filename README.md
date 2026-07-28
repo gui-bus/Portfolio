@@ -1,4 +1,4 @@
-# <div align="center"><img src="./public/logos/logo/white_logo.png" alt="Portfolio Logo" width="200" /></p>
+# <div align="center"><img src="./public/logos/logo/white_logo.svg" alt="Portfolio Logo" width="200" /></p>
 
 <img src="https://github.com/gui-bus/portfolio/blob/master/public/projects/portfolio.png?raw=true" width="100%" alt="Thumbnail Portfólio">
 

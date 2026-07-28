@@ -79,7 +79,7 @@ export async function HeroSection() {
                   </div>
 
                   <Link
-                    href="https://lume.guibus.dev/pt/share/guilherme-bustamante-frontend"
+                    href="https://lume.guibus.dev/pt/share/guilherme-bustamante"
                     target="_blank"
                     className="flex items-center gap-4 px-6 py-4 cinematic-card group hover:border-yellow-600/40 transition-all duration-500 relative overflow-hidden"
                   >
