@@ -360,6 +360,11 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "placeholder": {
+      "title": "Demnächst...",
+      "category": "Neues Projekt",
+      "description": "Ein neues spannendes Projekt befindet sich derzeit in Entwicklung und wird bald hier gelistet. Bleiben Sie dran."
     }
   },
   "Footer": {

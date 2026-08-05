@@ -400,6 +400,11 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "placeholder": {
+      "title": "Coming Soon...",
+      "category": "New Project",
+      "description": "An exciting new project is currently under development and will be listed here soon. Stay tuned for updates."
     }
   },
   "Footer": {

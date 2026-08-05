@@ -360,6 +360,11 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "placeholder": {
+      "title": "Bientôt...",
+      "category": "Nouveau Projet",
+      "description": "Un nouveau projet passionnant est actuellement en cours de développement et sera bientôt répertorié ici."
     }
   },
   "Footer": {

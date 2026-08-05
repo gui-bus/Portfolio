@@ -400,6 +400,11 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "placeholder": {
+      "title": "Em Breve...",
+      "category": "Novo Projeto",
+      "description": "Um novo projeto incrível está em desenvolvimento e será listado aqui em breve. Fique atento para as novidades."
     }
   },
   "Footer": {
