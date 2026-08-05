@@ -10,8 +10,7 @@ import { cn } from "@/lib/utils";
 import { fadeIn } from "@/lib/animations";
 import { Logo } from "./logo";
 import Link from "next/link";
-
-const portfolioUrl = "https://github.com/gui-bus";
+import Image from "next/image";
 
 interface NavItemProps {
   item: { key: string; href: string };
@@ -84,7 +83,7 @@ export function Header({ onStartProject }: HeaderProps) {
   const navItems = [
     { key: "about", href: "#methodology" },
     { key: "services", href: "#services" },
-    { key: "work", href: portfolioUrl },
+    { key: "work", href: "#projects" },
     { key: "contact", href: "#contact" },
   ];
 
@@ -107,7 +106,6 @@ export function Header({ onStartProject }: HeaderProps) {
           const id = entry.target.id;
           setActiveSection(id);
           
-          // Update URL hash without adding to history
           if (id && window.location.hash !== `#${id}`) {
             window.history.replaceState(null, "", `#${id}`);
           }
@@ -119,7 +117,7 @@ export function Header({ onStartProject }: HeaderProps) {
       observerCallback,
       observerOptions,
     );
-    const sections = ["methodology", "services", "contact"];
+    const sections = ["methodology", "services", "projects", "contact"];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
@@ -144,9 +142,9 @@ export function Header({ onStartProject }: HeaderProps) {
       >
         <div
           className={cn(
-            "max-w-7xl mx-auto flex items-center justify-between transition-all duration-500 px-6 py-3",
+            "w-full max-w-440 mx-auto flex items-center justify-between transition-all duration-500 px-6 py-3",
             scrolled
-              ? "bg-background/80 dark:bg-[#050505]/80 backdrop-blur-xl border border-border dark:border-white/5 shadow-2xl"
+              ? "bg-background/80 dark:bg-[#050505]/80 backdrop-blur-xl border border-border dark:border-white/5"
               : "bg-transparent border-transparent",
           )}
         >
@@ -160,7 +158,7 @@ export function Header({ onStartProject }: HeaderProps) {
               <Logo width={scrolled ? 90 : 110} height={32} />
             </motion.a>
 
-            <nav className="hidden lg:flex items-center gap-10">
+            <nav className="hidden 2xl:flex items-center gap-10">
               {navItems.map((item) => (
                 <NavItem
                   key={item.key}
@@ -173,12 +171,47 @@ export function Header({ onStartProject }: HeaderProps) {
           </div>
 
           <div className="flex items-center gap-3 md:gap-6">
-            <div className="hidden sm:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-4">
+              <Link
+                href="https://github.com/gui-bus"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-opacity flex items-center justify-center"
+              >
+                <Image
+                  src="/utils/icons/github_white.svg"
+                  alt="GitHub"
+                  width={24}
+                  height={24}
+                  className="hidden dark:block object-contain"
+                />
+                <Image
+                  src="/utils/icons/github_black.svg"
+                  alt="GitHub"
+                  width={24}
+                  height={24}
+                  className="block dark:hidden object-contain"
+                />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/gui-bus/"
+                target="_blank"
+                rel="noreferrer"
+                className="transition-opacity flex items-center justify-center mr-2"
+              >
+                <Image
+                  src="/utils/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  width={24}
+                  height={24}
+                  className="object-contain"
+                />
+              </Link>
               <LanguageSwitcher />
               <ThemeToggle />
             </div>
 
-            <div className="h-8 w-px bg-border dark:bg-white/10 hidden sm:block mx-1" />
+            <div className="h-8 w-px bg-border dark:bg-white/10 hidden lg:block mx-1" />
 
             <div className="hidden md:block">
               <CTA
@@ -190,7 +223,7 @@ export function Header({ onStartProject }: HeaderProps) {
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-3 bg-muted/30 dark:bg-white/3 border border-border dark:border-white/5 text-foreground cursor-pointer transition-colors hover:border-yellow-600 dark:hover:border-yellow-500"
+              className="2xl:hidden p-3 bg-muted/30 dark:bg-white/3 border border-border dark:border-white/5 text-foreground cursor-pointer transition-colors hover:border-yellow-600 dark:hover:border-yellow-500"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? (
@@ -210,7 +243,7 @@ export function Header({ onStartProject }: HeaderProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "circOut" }}
-            className="fixed inset-0 z-90 bg-background/98 dark:bg-[#050505]/98 backdrop-blur-2xl lg:hidden flex flex-col pt-32 px-8"
+            className="fixed inset-0 z-90 bg-background/98 dark:bg-[#050505]/98 backdrop-blur-2xl 2xl:hidden flex flex-col pt-32 px-8"
           >
             <div className="flex flex-col gap-8 mb-12">
               <span className="text-[10px] font-mono tracking-[0.4em] uppercase text-yellow-600 dark:text-yellow-500 font-bold border-b border-border dark:border-white/5 pb-4">
@@ -252,6 +285,49 @@ export function Header({ onStartProject }: HeaderProps) {
 
             <div className="mt-auto pb-12 flex flex-col gap-8 border-t border-border dark:border-white/5 pt-8">
               <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase">
+                  Social
+                </span>
+                <div className="flex items-center gap-4">
+                  <Link
+                    href="https://github.com/gui-bus"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-opacity flex items-center justify-center"
+                  >
+                    <Image
+                      src="/utils/icons/github_white.svg"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
+                      className="hidden dark:block object-contain"
+                    />
+                    <Image
+                      src="/utils/icons/github_black.svg"
+                      alt="GitHub"
+                      width={24}
+                      height={24}
+                      className="block dark:hidden object-contain"
+                    />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/in/gui-bus/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-opacity flex items-center justify-center"
+                  >
+                    <Image
+                      src="/utils/icons/linkedin.svg"
+                      alt="LinkedIn"
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between border-t border-border dark:border-white/5 pt-6">
                 <span className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase">
                   Preferences
                 </span>

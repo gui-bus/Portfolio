@@ -8,13 +8,13 @@
   },
   "Hero": {
     "status": "Verfügbar für neue Herausforderungen",
-    "location": "Ansässig in Brasilien / Weltweit remote",
+    "location": "Full-Stack-Entwickler & Designer",
     "branding": "Guilherme Bustamante // Portfolio 2026",
-    "title_top": "Digitaler",
-    "title_bottom": "Stratege",
-    "description": "Transformation von Geschäftsvisionen in interaktive Erlebnisse durch strategisches Design und High-End-Technologie.",
-    "stack_expert": "React / Next.js Experte",
-    "design_specialist": "UI/UX Spezialist",
+    "title_top": "Guilherme",
+    "title_bottom": "Bustamante",
+    "description": "Full-Stack-Entwickler mit ca. 4 Jahren Erfahrung in React, Next.js und TypeScript. Spezialisiert auf High-Fidelity-Interfaces, wiederverwendbare Komponentenarchitektur und den Aufbau robuster APIs.",
+    "stack_expert": "React / Next.js / TypeScript",
+    "design_specialist": "Figma / UI/UX / Design System",
     "cv_cta": "Digitaler Lebenslauf",
     "cta_projects": "Projekte erkunden",
     "tech_stack_label": "Tech Stack",
@@ -106,7 +106,8 @@
     "cta_live": "Live Projekt",
     "cta_github": "GitHub",
     "decorative_label": "AUSGEWÄHLTE_ARBEITEN",
-    "scroll_hint": "[ Ziehen oder Scrollen zum Erkunden ]"
+    "scroll_hint": "[ Ziehen oder Scrollen zum Erkunden ]",
+    "github_hint": "Für Details zur Architektur, technische Entscheidungen und den Entwicklungsverlauf rufen Sie bitte das GitHub-Repository auf."
   },
   "Contact": {
     "status": "Verfügbar für Anfragen",
@@ -165,7 +166,12 @@
         "Konsistenz-Visualisierung inspiriert durch GitHubs Grid",
         "Asynchrone Achievements und XP-Pipeline zur Kundenbindung"
       ],
-      "tags": ["Full-Stack", "KI", "Fitness", "Gamifizierung"]
+      "tags": [
+        "Full-Stack",
+        "KI",
+        "Fitness",
+        "Gamifizierung"
+      ]
     },
     "powervet": {
       "title": "PowerVet",
@@ -179,7 +185,11 @@
         "Integrierte Bildungsmodule zur Gesundheitsvorsorge",
         "Außergewöhnliche technische Performance für organisches SEO"
       ],
-      "tags": ["Gesundheitswesen", "Katzen-Spezialist", "Responsive"]
+      "tags": [
+        "Gesundheitswesen",
+        "Katzen-Spezialist",
+        "Responsive"
+      ]
     },
     "horizon-travels": {
       "title": "Horizon Travels",
@@ -193,7 +203,11 @@
         "Bildladestrategie optimiert für hohe Auflösung",
         "Mobile-First-Design für Reisende unterwegs"
       ],
-      "tags": ["Reisen", "Visuelles Storytelling", "UX/UI"]
+      "tags": [
+        "Reisen",
+        "Visuelles Storytelling",
+        "UX/UI"
+      ]
     },
     "voltage-festival": {
       "title": "Voltage Festival",
@@ -207,7 +221,12 @@
         "Hochleistungs-Ticket-Integrationsfluss",
         "Virale Landing Page mit Social-Sharing-Features"
       ],
-      "tags": ["Musik", "Event", "Interaktiv", "Neon-Design"]
+      "tags": [
+        "Musik",
+        "Event",
+        "Interaktiv",
+        "Neon-Design"
+      ]
     },
     "haven-barbershop": {
       "title": "Haven Barbershop",
@@ -221,7 +240,12 @@
         "Ritual-Galerie optimiert für mobile Geräte",
         "SEO-Strategie fokussiert auf lokale Luxus-Keywords"
       ],
-      "tags": ["Lifestyle", "Branding", "E-Commerce", "Lokales Business"]
+      "tags": [
+        "Lifestyle",
+        "Branding",
+        "E-Commerce",
+        "Lokales Business"
+      ]
     },
     "starkfit": {
       "title": "StarkFit",
@@ -279,6 +303,63 @@
         "Next.js 16 & React 19",
         "Industrial Architecture"
       ]
+    },
+    "atlas": {
+      "title": "Atlas HRMS",
+      "category": "ERP & Rekrutierungssystem (ATS)",
+      "description": "Unternehmenstool für Zeiterfassung, Gehaltsabrechnung und Arbeitszeitkonto mit Kanban-Board für Kandidaten.",
+      "challenge": "Konsolidierung mehrerer komplexer Geschäftsmodule in einer einheitlichen, durchgehend typisierten Architektur.",
+      "solution": "Entwickelt mit NestJS, Next.js, Prisma und PostgreSQL in einem von Turborepo und Docker verwalteten Monorepo.",
+      "results": [
+        "Natives Teilen von Typen zwischen Client und Server",
+        "Zeiterfassung mit automatischer Berechnung des Arbeitszeitkontos in Echtzeit",
+        "Interaktive Kanban-Visualisierung für die Rekrutierungs-Pipeline",
+        "Hybride Sicherheit durch Http-Only-Cookies und RBAC-Backend-Steuerung"
+      ],
+      "tags": [
+        "Monorepo",
+        "NestJS",
+        "PostgreSQL",
+        "Corporate App"
+      ]
+    },
+    "bloom": {
+      "title": "Bloom",
+      "category": "Design System & Komponentenbibliothek",
+      "description": "Open-Source-Komponentenbibliothek für React, inspiriert von shadcn/ui und erstellt mit Tailwind CSS v4.",
+      "challenge": "Gewährleistung maximaler Barrierefreiheit und visueller Konsistenz bei einfacher Installation.",
+      "solution": "Modulare Komponenten mit Radix UI, Styling mit Tailwind CSS v4 und Tests mit Vitest/Playwright.",
+      "results": [
+        "Über 70 High-Fidelity-Komponenten mit garantierter Barrierefreiheit",
+        "Eigene CLI zur direkten Installation via npm",
+        "Validierung von Design und Verhalten mit Playwright und Vitest",
+        "Optimierte Struktur für schnelle Ladezeiten"
+      ],
+      "tags": [
+        "Design System",
+        "Tailwind v4",
+        "React 19",
+        "CLI Tool"
+      ]
+    },
+    "techicons": {
+      "title": "TechIcons",
+      "category": "Open-Source-Assets-Bibliothek",
+      "description": "Katalog mit über 290 Technologie-Icons, optimiert für Dokumentationen und Entwicklerprofile.",
+      "challenge": "Strukturierung einer konsistenten Icon-Sammlung mit dynamischer Light- und Dark-Theme-Kompatibilität.",
+      "solution": "Vektorisierte SVG-Assets mit sauberem Aufbau und automatisiertem Deployment über GitHub Actions.",
+      "results": [
+        "Über 290 moderne Technologie-Icons",
+        "Integrierte Unterstützung für helle und dunkle Themes",
+        "Weltweit genutzt von Tausenden Entwicklern auf GitHub",
+        "Einfache Beitragsabgabe durch CI-Automatisierung"
+      ],
+      "tags": [
+        "Open Source",
+        "SVG Assets",
+        "Branding",
+        "Assets Catalog"
+      ]
     }
   },
   "Footer": {
@@ -302,5 +383,19 @@
   "Metadata": {
     "title": "Guibus | Fullstack Entwickler & Designer",
     "description": "Portfolio eines Creative Technologists, spezialisiert auf den Bau von Hochleistungs-Produkten und skalierbaren Systemen."
+  },
+  "About": {
+    "tag": "Über Mich",
+    "title_top": "Verbindung von",
+    "title_bottom": "Design & Code.",
+    "subtitle": "Kombination aus raffiniertem Interface-Design und sauberem, leistungsstarkem und typisiertem Code.",
+    "bio_title": "Mein Werdegang",
+    "bio_description": "Ich bin Full-Stack-Entwickler mit Fokus auf Frontend und ca. 4 Jahren praktischer Erfahrung im JavaScript/TypeScript-Ökosystem. Meine Leidenschaft ist es, komplexe Ideen in schnelle, responsive und visuell beeindruckende Benutzeroberflächen zu übersetzen. Ich arbeite von der Definition der Frontend-Architektur bis zur Strukturierung robuster APIs im Backend.",
+    "experience_title": "Berufserfahrung",
+    "unifahe_role": "Frontend-Entwickler & UI/UX-Designer bei der Hochschule Unifahe (2024 — 2026)",
+    "unifahe_description": "Verantwortlich für die Strukturierung von Grund auf und die Leitung der Entwicklung der Verwaltungs- und Studierendenplattformen, wovon über 10.000 Nutzer profitierten. Aktive Mitarbeit an der Integration von REST-APIs, der Definition von Standards für wiederverwendbare Komponenten und Usability-/Interface-Entscheidungen auf der gesamten Plattform.",
+    "education_title": "Bildung & Lernen",
+    "education_description": "Fokus auf kontinuierliche Weiterbildung durch Spezialisierungen und Kurse in KI, UX-Design (UX Unicórnio), modernen Softwarearchitekturen und Full-Stack-Entwicklung.",
+    "cta": "Projekte Erkunden"
   }
 }

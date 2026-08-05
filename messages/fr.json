@@ -8,13 +8,13 @@
   },
   "Hero": {
     "status": "Disponible pour de nouveaux défis",
-    "location": "Basé au Brésil / Remote dans le monde entier",
+    "location": "Développeur Full Stack & Designer",
     "branding": "Guilherme Bustamante // Portfolio 2026",
-    "title_top": "Stratège",
-    "title_bottom": "Digital",
-    "description": "Transformer les visions d'entreprise en expériences interactives grâce au design stratégique et à la technologie haut de gamme.",
-    "stack_expert": "Expert React / Next.js",
-    "design_specialist": "Spécialiste UI/UX",
+    "title_top": "Guilherme",
+    "title_bottom": "Bustamante",
+    "description": "Développeur Full Stack avec environ 4 ans d'expérience utilisant React, Next.js et TypeScript. Spécialisé dans les interfaces haute fidélité, l'architecture de composants réutilisables et le développement d'API robustes.",
+    "stack_expert": "React / Next.js / TypeScript",
+    "design_specialist": "Figma / UI/UX / Design System",
     "cv_cta": "CV Numérique",
     "cta_projects": "Explorer les projets",
     "tech_stack_label": "Tech Stack",
@@ -106,7 +106,8 @@
     "cta_live": "Projet en direct",
     "cta_github": "GitHub",
     "decorative_label": "TRAVAUX_SELECTIONNES",
-    "scroll_hint": "[ Faites glisser ou défilez para explorer ]"
+    "scroll_hint": "[ Faites glisser ou défilez para explorer ]",
+    "github_hint": "Pour plus de détails sur l'architecture, les décisions techniques et l'historique du développement, accédez au dépôt GitHub."
   },
   "Contact": {
     "status": "Disponible pour travailler",
@@ -165,7 +166,12 @@
         "Visualisation de la cohérence inspirée de la grille de GitHub",
         "Pipeline d'achievements et d'XP asynchrone pour la rétention"
       ],
-      "tags": ["Full-stack", "AI", "Fitness", "Gamification"]
+      "tags": [
+        "Full-stack",
+        "AI",
+        "Fitness",
+        "Gamification"
+      ]
     },
     "powervet": {
       "title": "PowerVet",
@@ -179,7 +185,11 @@
         "Modules éducatifs intégrés sur les soins préventifs",
         "Performance technique exceptionnelle pour le SEO organique"
       ],
-      "tags": ["Santé", "Spécialiste félin", "Responsive"]
+      "tags": [
+        "Santé",
+        "Spécialiste félin",
+        "Responsive"
+      ]
     },
     "horizon-travels": {
       "title": "Horizon Travels",
@@ -193,7 +203,11 @@
         "Stratégie de chargement d'images optimisée pour la haute résolution",
         "Design mobile-first pour les voyageurs en déplacement"
       ],
-      "tags": ["Voyage", "Storytelling visuel", "UX/UI"]
+      "tags": [
+        "Voyage",
+        "Storytelling visuel",
+        "UX/UI"
+      ]
     },
     "voltage-festival": {
       "title": "Voltage Festival",
@@ -207,7 +221,12 @@
         "Flux d'intégration de tickets haute performance",
         "Landing page virale avec fonctionnalités de partage social"
       ],
-      "tags": ["Musique", "Événement", "Interactif", "Design Néon"]
+      "tags": [
+        "Musique",
+        "Événement",
+        "Interactif",
+        "Design Néon"
+      ]
     },
     "haven-barbershop": {
       "title": "Haven Barbershop",
@@ -221,7 +240,12 @@
         "Galerie de rituels optimisée pour les appareils mobiles",
         "Stratégie SEO axée sur les mots-clés de luxe locaux"
       ],
-      "tags": ["Lifestyle", "Branding", "E-commerce", "Commerce local"]
+      "tags": [
+        "Lifestyle",
+        "Branding",
+        "E-commerce",
+        "Commerce local"
+      ]
     },
     "starkfit": {
       "title": "StarkFit",
@@ -279,6 +303,63 @@
         "Next.js 16 & React 19",
         "Industrial Architecture"
       ]
+    },
+    "atlas": {
+      "title": "Atlas HRMS",
+      "category": "Système ERP & Recrutement (ATS)",
+      "description": "Système d'entreprise pour la paie, la gestion du temps de travail et le suivi des candidats (ATS) via Kanban.",
+      "challenge": "Consolider plusieurs modules d'affaires complexes dans une architecture unifiée et entièrement typée de bout en bout.",
+      "solution": "Développé avec NestJS, Next.js, Prisma et PostgreSQL au sein d'un monorepo géré par Turborepo et Docker.",
+      "results": [
+        "Partage de types natif entre client et serveur",
+        "Gestion du temps de présence avec calcul des heures en temps réel",
+        "Visualisation Kanban interactive du pipeline de recrutement",
+        "Sécurité hybride avec cookies Http-Only et contrôle RBAC côté serveur"
+      ],
+      "tags": [
+        "Monorepo",
+        "NestJS",
+        "PostgreSQL",
+        "Corporate App"
+      ]
+    },
+    "bloom": {
+      "title": "Bloom",
+      "category": "Design System & Bibliothèque de Composants",
+      "description": "Bibliothèque de composants React open source inspirée de shadcn/ui et propulsée par Tailwind CSS v4.",
+      "challenge": "Garantir une accessibilité maximale et une cohérence visuelle tout en offrant une installation ultra-simple.",
+      "solution": "Composants modulaires avec Radix UI, stylisés en Tailwind CSS v4 et testés avec Vitest/Playwright.",
+      "results": [
+        "Plus de 70 composants haute fidélité avec accessibilité garantie",
+        "CLI dédiée installable directement via npm",
+        "Validation visuelle et comportementale avec Playwright et Vitest",
+        "Structure optimisée pour une vitesse de chargement maximale"
+      ],
+      "tags": [
+        "Design System",
+        "Tailwind v4",
+        "React 19",
+        "CLI Tool"
+      ]
+    },
+    "techicons": {
+      "title": "TechIcons",
+      "category": "Bibliothèque d'Actifs Open Source",
+      "description": "Catalogue de plus de 290 icônes de technologie optimisées pour les documentations et portfolios.",
+      "challenge": "Organiser une collection cohérente avec compatibilité dynamique pour thèmes clairs et sombres.",
+      "solution": "Actifs SVG vectorisés avec structure propre et déploiement automatisé avec GitHub Actions.",
+      "results": [
+        "Plus de 290 icônes technologiques modernes",
+        "Prise en charge dynamique des thèmes clairs et sombres",
+        "Utilisé à l'échelle mondiale par des milliers de développeurs sur GitHub",
+        "Processus de contribution facilité via l'automatisation CI"
+      ],
+      "tags": [
+        "Open Source",
+        "SVG Assets",
+        "Branding",
+        "Assets Catalog"
+      ]
     }
   },
   "Footer": {
@@ -302,5 +383,19 @@
   "Metadata": {
     "title": "Guibus | Développeur Full-stack et Designer",
     "description": "Portfolio d'un Creative Technologist spécialisé dans la construction de produits digitais haute performance et de systèmes évolutifs."
+  },
+  "About": {
+    "tag": "À Propos de Moi",
+    "title_top": "Connecter",
+    "title_bottom": "Design & Code.",
+    "subtitle": "Combiner un design d'interface raffiné avec un code propre, performant et typé.",
+    "bio_title": "Mon Parcours",
+    "bio_description": "Je suis Développeur Full Stack orienté Frontend avec environ 4 ans d'expérience pratique dans l'écosystème JavaScript/TypeScript. Ma passion est de traduire des idées complexes en interfaces rapides, réactives et visuellement éblouissantes. Je travaille de la définition de l'architecture frontend à la structuration d'API robustes sur le backend.",
+    "experience_title": "Expérience Récente",
+    "unifahe_role": "Développeur Frontend & UI/UX Designer à la Faculté Unifahe (2024 — 2026)",
+    "unifahe_description": "Responsable de la structuration à partir de zéro et de la direction du développement des plateformes administratives et étudiantes, impactant plus de 10 000 utilisateurs. J'ai activement travaillé sur l'intégration d'API REST, la définition de normes de composants réutilisables et les décisions d'ergonomie et d'interface sur l'ensemble de la plateforme.",
+    "education_title": "Éducation & Apprentissage",
+    "education_description": "Axé sur l'amélioration continue à travers des spécialisations et des cours en IA, Design UX (UX Unicórnio), architectures logicielles modernes et développement full-stack.",
+    "cta": "Explorer les Projets"
   }
 }
