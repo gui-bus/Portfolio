@@ -13,7 +13,6 @@ export async function AboutSection() {
     >
       <div className="max-w-400 mx-auto px-6 relative z-10">
         <SectionAnimationWrapper className="grid grid-cols-1 xl:grid-cols-12 gap-16 xl:gap-24">
-          {/* Left Column: Title & Trajectory */}
           <div className="xl:col-span-6 flex flex-col">
             <div>
               <div className="flex items-center gap-3 mb-6">
@@ -41,9 +40,7 @@ export async function AboutSection() {
             </div>
           </div>
 
-          {/* Right Column: Experience & Education */}
           <div className="xl:col-span-6 flex flex-col gap-12 xl:pl-12 xl:border-l border-border dark:border-white/5">
-            {/* Experience Section */}
             <div className="space-y-6">
               <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-yellow-600 dark:text-yellow-500 font-black block">
                 [ {t("experience_title")} ]
@@ -62,7 +59,6 @@ export async function AboutSection() {
               </div>
             </div>
 
-            {/* Education Section */}
             <div className="space-y-6 border-t border-border dark:border-white/5 pt-12">
               <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-yellow-600 dark:text-yellow-500 font-black block">
                 [ {t("education_title")} ]
@@ -74,10 +70,10 @@ export async function AboutSection() {
                 </p>
                 
                 <div className="flex flex-wrap items-center gap-6">
-                  <Image src="/utils/courses/ux-unicornio.svg" alt="UX Unicórnio" width={128} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/design-boost.svg" alt="Design Boost" width={128} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/fullstack-club.svg" alt="Fullstack Club" width={128} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/sujeito-programador.svg" alt="Sujeito Programador" width={128} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
+                  <Image src="/utils/courses/ux-unicornio.svg" alt="UX Unicórnio" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
+                  <Image src="/utils/courses/design-boost.svg" alt="Design Boost" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
+                  <Image src="/utils/courses/sujeito-programador.svg" alt="Sujeito Programador" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
+                  <Image src="/utils/courses/fullstack-club.svg" alt="Fullstack Club" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
                 </div>
               </div>
             </div>

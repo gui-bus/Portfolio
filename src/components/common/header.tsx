@@ -136,16 +136,12 @@ export function Header({ onStartProject }: HeaderProps) {
         initial="initial"
         animate="animate"
         className={cn(
-          "fixed top-0 left-0 right-0 z-100 transition-all duration-500 ease-in-out px-4 md:px-12 w-full",
-          scrolled ? "py-4" : "py-8 md:py-10",
+          "px-4 md:px-12 w-full",
         )}
       >
         <div
           className={cn(
-            "w-full max-w-440 mx-auto flex items-center justify-between transition-all duration-500 px-6 py-3",
-            scrolled
-              ? "bg-background/80 dark:bg-[#050505]/80 backdrop-blur-xl border border-border dark:border-white/5"
-              : "bg-transparent border-transparent",
+            "w-full max-w-400 mx-auto flex items-center justify-between transition-all duration-500 px-6 py-3 bg-transparent border-transparent py-5",
           )}
         >
           <div className="flex items-center gap-12">
