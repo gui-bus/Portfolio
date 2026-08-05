@@ -430,10 +430,10 @@
     "title_bottom": "Design & Code.",
     "subtitle": "Combining refined interface design with clean, high-performance, and typed code.",
     "bio_title": "My Trajectory",
-    "bio_description": "I am a Full Stack Developer focusing on Frontend with about 4 years of hands-on experience in the JavaScript/TypeScript ecosystem. My passion is translating complex ideas into fast, responsive, and visually stunning interfaces. I work from defining frontend architecture to structuring robust APIs on the backend.",
+    "bio_description": "Full Stack Developer focusing on Frontend with around 4 years of experience using React, Next.js, and TypeScript. Worked on creating and evolving web applications, participating in defining frontend architecture, developing responsive interfaces, integrating with REST APIs, and standardizing components. Currently expanding backend experience with Node.js, NestJS, Prisma, and PostgreSQL, developing full stack applications and REST APIs.",
     "experience_title": "Recent Experience",
     "unifahe_role": "Frontend Developer & UI/UX Designer at Faculdade Unifahe (2024 — 2026)",
-    "unifahe_description": "Responsible for structuring from scratch and leading the development of the administrative and student platforms, impacting over 10,000 users. Actively worked on REST API integration, defining reusable component standards, and usability/interface decisions across the platform.",
+    "unifahe_description": "Served as the team's first frontend developer, responsible for structuring the project from the start using React, Next.js, and TypeScript. Participated in the development of the administrative and student platforms, used by over 10k users, defining frontend architecture, reusable components, and development standards. Also responsible for interface and user experience decisions, creating responsive and consistent screens in the absence of a dedicated designer. Worked alongside the backend team on REST API integration.",
     "education_title": "Education & Learning",
     "education_description": "Focused on continuous improvement through specializations and courses in AI, UX Design (UX Unicórnio), modern software architectures, and full-stack development.",
     "cta": "Explore Projects"

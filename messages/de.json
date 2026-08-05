@@ -390,10 +390,10 @@
     "title_bottom": "Design & Code.",
     "subtitle": "Kombination aus raffiniertem Interface-Design und sauberem, leistungsstarkem und typisiertem Code.",
     "bio_title": "Mein Werdegang",
-    "bio_description": "Ich bin Full-Stack-Entwickler mit Fokus auf Frontend und ca. 4 Jahren praktischer Erfahrung im JavaScript/TypeScript-Ökosystem. Meine Leidenschaft ist es, komplexe Ideen in schnelle, responsive und visuell beeindruckende Benutzeroberflächen zu übersetzen. Ich arbeite von der Definition der Frontend-Architektur bis zur Strukturierung robuster APIs im Backend.",
+    "bio_description": "Full-Stack-Entwickler mit Fokus auf Frontend und ca. 4 Jahren Erfahrung mit React, Next.js und TypeScript. Erfahrung in der Erstellung und Weiterentwicklung von Webanwendungen, Beteiligung an der Definition der Frontend-Architektur, Entwicklung responsiver Interfaces, Integration von REST-APIs und Standardisierung von Komponenten. Aktuelle Erweiterung der Backend-Kenntnisse mit Node.js, NestJS, Prisma und PostgreSQL zur Entwicklung von Full-Stack-Anwendungen und REST-APIs.",
     "experience_title": "Berufserfahrung",
     "unifahe_role": "Frontend-Entwickler & UI/UX-Designer bei der Hochschule Unifahe (2024 — 2026)",
-    "unifahe_description": "Verantwortlich für die Strukturierung von Grund auf und die Leitung der Entwicklung der Verwaltungs- und Studierendenplattformen, wovon über 10.000 Nutzer profitierten. Aktive Mitarbeit an der Integration von REST-APIs, der Definition von Standards für wiederverwendbare Komponenten und Usability-/Interface-Entscheidungen auf der gesamten Plattform.",
+    "unifahe_description": "Erster Frontend-Entwickler im Team, verantwortlich für die Strukturierung des Projekts von Beginn an mit React, Next.js und TypeScript. Beteiligung an der Entwicklung der Verwaltungs- und Studierendenplattformen für über 10.000 Nutzer, Definition der Frontend-Architektur, wiederverwendbarer Komponenten und Entwicklungsstandards. Zudem verantwortlich für Interface- und User-Experience-Entscheidungen, Erstellung responsiver und konsistenter Screens mangels eines dedizierten Designers. Zusammenarbeit mit dem Backend-Team bei der REST-API-Integration.",
     "education_title": "Bildung & Lernen",
     "education_description": "Fokus auf kontinuierliche Weiterbildung durch Spezialisierungen und Kurse in KI, UX-Design (UX Unicórnio), modernen Softwarearchitekturen und Full-Stack-Entwicklung.",
     "cta": "Projekte Erkunden"

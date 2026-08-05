@@ -390,10 +390,10 @@
     "title_bottom": "Diseño & Código.",
     "subtitle": "Combinando un diseño de interfaz refinado con código limpio, de alto rendimiento y tipado.",
     "bio_title": "Mi Trayectoria",
-    "bio_description": "Soy Desarrollador Full Stack enfocado en Frontend con aproximadamente 4 años de experiencia práctica en el ecosistema JavaScript/TypeScript. Mi pasión es traducir ideas complejas en interfaces rápidas, responsivas y visualmente deslumbrantes. Trabajo desde la definición de la arquitectura frontend hasta la estructuración de APIs robustas en el backend.",
+    "bio_description": "Desarrollador Full Stack enfocado en Frontend con aproximadamente 4 años de experiencia utilizando React, Next.js y TypeScript. Trabajé en la creación y evolución de aplicaciones web, participando en la definición de la arquitectura frontend, desarrollo de interfaces responsivas, integración con APIs REST y estandarización de componentes. Actualmente expandiendo la experiencia en backend con Node.js, NestJS, Prisma y PostgreSQL, desarrollando aplicaciones full stack y APIs REST.",
     "experience_title": "Experiencia Recente",
     "unifahe_role": "Desarrollador Frontend & Diseñador UI/UX en Facultad Unifahe (2024 — 2026)",
-    "unifahe_description": "Responsable de estructurar desde cero y liderar el desarrollo de las plataformas administrativa y del alumno, impactando a más de 10,000 usuarios. Trabajé activamente en la integración de APIs REST, definiendo estándares de componentes reutilizables y decisiones de usabilidad e interfaz en toda la plataforma.",
+    "unifahe_description": "Me desempeñé como el primer desarrollador frontend del equipo, responsable de estructurar el proyecto desde el inicio utilizando React, Next.js y TypeScript. Participé en el desarrollo de las plataformas administrativa y del alumno, utilizadas por más de 10 mil usuarios, definiendo la arquitectura frontend, componentes reutilizables y estándares de desarrollo. También responsable de las decisiones de interfaz y experiencia de usuario, creando pantallas responsivas y consistentes en ausencia de un diseñador dedicado. Trabajé junto al equipo de backend en la integración con APIs REST.",
     "education_title": "Educación & Aprendizaje",
     "education_description": "Enfocado en la mejora continua a través de especializaciones y cursos de IA, Diseño UX (UX Unicórnio), arquitecturas de software modernas y desarrollo full-stack.",
     "cta": "Explorar Proyectos"
