@@ -25,6 +25,18 @@ interface GitHubRepo {
   language: string | null;
 }
 
+interface GitHubEvent {
+  type: string;
+  repo: { name: string };
+  payload: {
+    commits?: Array<{
+      message: string;
+      sha: string;
+    }>;
+  };
+  created_at: string;
+}
+
 const fallbackStats = {
   avatarUrl: "https://avatars.githubusercontent.com/u/81804245?v=4",
   name: "Guilherme Bustamante",
