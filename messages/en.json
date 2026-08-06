@@ -14,7 +14,7 @@
     "branding": "Guilherme Bustamante // Portfolio 2026",
     "title_top": "Guilherme",
     "title_bottom": "Bustamante",
-    "description": "Full Stack Developer with around 4 years of experience using React, Next.js, and TypeScript. Specializing in high-fidelity interfaces, reusable component architecture, and building robust APIs.",
+    "description": "Full Stack Developer with around 3 years of experience using React, Next.js, and TypeScript. Specializing in high-fidelity interfaces, reusable component architecture, and building robust APIs.",
     "stack_expert": "React / Next.js / TypeScript",
     "design_specialist": "Figma / UI/UX / Design System",
     "cv_cta": "Digital CV",
@@ -179,7 +179,7 @@
   },
   "Metadata": {
     "title": "Guibus | Fullstack Developer & Designer",
-    "description": "Full Stack Developer focused on Frontend with around 4 years of experience using React, Next.js and TypeScript."
+    "description": "Full Stack Developer focused on Frontend with around 3 years of experience using React, Next.js and TypeScript."
   },
   "About": {
     "tag": "About Me",
@@ -187,7 +187,7 @@
     "title_bottom": "Design & Code.",
     "subtitle": "Combining refined interface design with clean, high-performance, and typed code.",
     "bio_title": "My Trajectory",
-    "bio_description": "Full Stack Developer focusing on Frontend with around 4 years of experience using React, Next.js, and TypeScript. Worked on creating and evolving web applications, participating in defining frontend architecture, developing responsive interfaces, integrating with REST APIs, and standardizing components. Currently expanding backend experience with Node.js, NestJS, Prisma, and PostgreSQL, developing full stack applications and REST APIs.",
+    "bio_description": "Full Stack Developer focusing on Frontend with around 3 years of experience using React, Next.js, and TypeScript. Worked on creating and evolving web applications, participating in defining frontend architecture, developing responsive interfaces, integrating with REST APIs, and standardizing components. Currently expanding backend experience with Node.js, NestJS, Prisma, and PostgreSQL, developing full stack applications and REST APIs.",
     "experience_title": "Recent Experience",
     "unifahe_role": "Frontend Developer & UI/UX Designer at Faculdade Unifahe (2024 — 2026)",
     "unifahe_description": "Served as the team's first frontend developer, responsible for structuring the project from the start using React, Next.js, and TypeScript. Participated in the development of the administrative and student platforms, used by over 10k users, defining frontend architecture, reusable components, and development standards. Also responsible for interface and user experience decisions, creating responsive and consistent screens in the absence of a dedicated designer. Worked alongside the backend team on REST API integration.",
