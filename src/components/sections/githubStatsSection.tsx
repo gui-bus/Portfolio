@@ -54,12 +54,23 @@ const fallbackStats = {
   ],
 };
 
+function githubHeaders(): HeadersInit {
+  const token = process.env.GITHUB_TOKEN;
+  return token
+    ? { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" }
+    : { Accept: "application/vnd.github+json" };
+}
+
 async function getRecentCommits() {
   try {
     const eventsRes = await fetch("https://api.github.com/users/gui-bus/events/public", {
       cache: "no-store",
+      headers: githubHeaders(),
     });
-    if (!eventsRes.ok) return [];
+    if (!eventsRes.ok) {
+      console.error("Events API error:", eventsRes.status, await eventsRes.text());
+      return [];
+    }
 
     const events: GitHubEvent[] = await eventsRes.json();
     const pushEvents = events.filter(
@@ -82,11 +93,12 @@ async function getRecentCommits() {
 async function getGitHubStats() {
   try {
     const [userRes, reposRes] = await Promise.all([
-      fetch("https://api.github.com/users/gui-bus", { next: { revalidate: 3600 } }),
-      fetch("https://api.github.com/users/gui-bus/repos?per_page=100", { next: { revalidate: 3600 } }),
+      fetch("https://api.github.com/users/gui-bus", { next: { revalidate: 3600 }, headers: githubHeaders() }),
+      fetch("https://api.github.com/users/gui-bus/repos?per_page=100", { next: { revalidate: 3600 }, headers: githubHeaders() }),
     ]);
 
     if (!userRes.ok || !reposRes.ok) {
+      console.error("User/Repos API error:", userRes.status, reposRes.status);
       return { ...fallbackStats, recentCommits: await getRecentCommits() };
     }
 
