@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Header } from "@/components/common/header";
+// import { Header } from "@/components/common/header";
 import { fadeIn } from "@/lib/animations";
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ interface MainClientLayoutProps {
 export function MainClientLayout({ children }: MainClientLayoutProps) {
   return (
     <motion.div variants={fadeIn} initial="initial" animate="animate">
-      <Header />
+      {/* <Header /> */}
       <main className="relative">{children}</main>
 
       
