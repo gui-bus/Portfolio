@@ -290,7 +290,7 @@
     "lume": {
       "title": "Lume",
       "category": "Career Engineering & High-Performance ATS",
-      "description": "Plataforma de engenharia de carreira projetada para profissionais de elite, eliminando a fricção entre a experiência técnica e a aprovação em algoritmos de recrutamento (ATS).",
+      "description": "O Lume é uma plataforma completa para criação de currículos, cartas de apresentação e documentos profissionais desenvolvida com React, Next.js e TypeScript. O sistema permite criar layouts personalizados, organizar o histórico de carreira, validar currículos para compatibilidade com robôs de recrutamento (ATS), exportar em PDF de alta qualidade e gerenciar diferentes versões de arquivos com suporte nativo a múltiplos idiomas.",
       "challenge": "Desenvolver uma interface de edição em tempo real que harmonize a complexidade de dados estruturados com uma experiência de usuário fluida, garantindo precisão cirúrgica na geração de documentos otimizados.",
       "solution": "Arquitetura baseada em Next.js e Server Actions, integrando um motor de renderização de PDF live, validação rigorosa com Zod/Prisma e uma UI minimalista potencializada por Framer Motion e View Transitions.",
       "results": [
@@ -328,7 +328,7 @@
     "magui": {
       "title": "MAGUI.studio",
       "category": "High-End Visual Strategy & Professional Interface Engineering",
-      "description": "Engenharia visual e interfaces focadas em performance e resultados para sistemas digitais.",
+      "description": "Uma coleção premium de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance SEO, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
       "challenge": "Construir um template universal de altíssimo nível que unifique o rigor da engenharia (Next.js 16/React 19) com a sofisticação visual do design de autoridade, garantindo 100/100 em todos os Core Web Vitals.",
       "solution": "Arquitetura baseada em Next.js App Router, Tailwind CSS v4 e i18n prefix-less, incorporando um workflow industrial com geradores Plop.js, testes unitários/E2E e auditoria automatizada de segurança e performance.",
       "results": [
@@ -347,7 +347,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Sistema de Recrutamento (ATS)",
-      "description": "Sistema corporativo de departamento pessoal, ponto eletrônico e banco de horas, com quadro Kanban para gestão de candidatos.",
+      "description": "O Atlas HRMS é um sistema integrado para gestão de recursos humanos desenvolvido em arquitetura monorepo de alta performance com Next.js, NestJS, Prisma e PostgreSQL. O projeto reúne em um único painel módulos completos para controle de colaboradores, cargos, férias, folha de ponto digital, banco de horas flexível, acompanhamento de processos seletivos (ATS), controle de acessos e dashboards com indicadores administrativos.",
       "challenge": "Consolidar múltiplos módulos empresariais em uma arquitetura unificada e tipada de ponta a ponta.",
       "solution": "Desenvolvimento com NestJS, Next.js, Prisma e PostgreSQL em um monorepo gerenciado por Turborepo e Docker.",
       "results": [
@@ -366,7 +366,7 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Biblioteca de Componentes",
-      "description": "Biblioteca open source de componentes React inspirada no shadcn/ui e potencializada com Tailwind CSS v4.",
+      "description": "O Bloom é uma biblioteca moderna de componentes React inspirada no shadcn/ui, desenvolvida com React, Next.js, Radix UI e Tailwind CSS. O ecossistema reúne mais de 70 componentes altamente customizáveis, sistema centralizado de design tokens, documentação interativa com playground de testes, CLI própria para instalação via linha de comando, e testes com Vitest, focado em acessibilidade e consistência de interfaces.",
       "challenge": "Garantir a máxima acessibilidade e consistência visual ao mesmo tempo que oferece facilidade de instalação para desenvolvedores.",
       "solution": "Componentes modulares com Radix UI, estilizados com Tailwind CSS v4 e suíte de testes com Vitest/Playwright.",
       "results": [
@@ -385,7 +385,7 @@
     "techicons": {
       "title": "TechIcons",
       "category": "Biblioteca de Ativos Open Source",
-      "description": "Catálogo de mais de 290 ícones de tecnologias otimizados para documentações de projetos e perfis de desenvolvedores.",
+      "description": "O TechIcons é uma biblioteca open source com mais de 290 ícones de tecnologia criada para enriquecer a construção de READMEs, portfólios e documentações de projetos. Os ícones representam ferramentas, frameworks e serviços utilizados em desenvolvimento de software, desenhados para garantir consistência visual e alta qualidade em diferentes resoluções, incluindo suporte nativo para contraste em temas claros e escuros.",
       "challenge": "Organizar uma coleção consistente de ícones com compatibilidade dinâmica para temas claros e escuros.",
       "solution": "Assets vetorizados em SVG com estrutura limpa e automações de deploy via GitHub Actions.",
       "results": [
@@ -401,10 +401,12 @@
         "Assets Catalog"
       ]
     },
-    "placeholder": {
-      "title": "Em Breve...",
-      "category": "Novo Projeto",
-      "description": "Um novo projeto incrível está em desenvolvimento e será listado aqui em breve. Fique atento para as novidades."
+    "powerfit": {
+      "title": "POWER.FIT",
+      "category": "Plataforma Full Stack",
+      "description": "O POWER.FIT é uma plataforma full stack para gerenciamento de treinos desenvolvida com Next.js, Fastify, TypeScript e PostgreSQL. O sistema auxilia no planejamento de exercícios e acompanhamento de rotinas físicas. A aplicação web utiliza renderização SSR com gerenciamento eficiente de estado no frontend, enquanto a API backend robusta implementa autenticação segura, validações com Zod e persistência através do Prisma ORM.",
+      "cta_frontend": "Repositório FRONTEND",
+      "cta_backend": "Repositório BACKEND"
     }
   },
   "Footer": {

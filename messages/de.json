@@ -269,7 +269,7 @@
     "lume": {
       "title": "Lume",
       "category": "Career Engineering & Hochleistungs-ATS",
-      "description": "Karriere-Engineering-Plattform für Elite-Profis, die Reibungsverluste zwischen technischer Erfahrung und der Zulassung in Bewerbermanagementsystemen (ATS) eliminiert.",
+      "description": "Lume ist eine vollständige Plattform zur Erstellung von Lebensläufen, Anschreiben und professionellen Dokumenten mit React, Next.js und TypeScript. Das System ermöglicht personalisierte Layouts, Karriereverlauf-Organisation, Lebenslauf-Validierung auf ATS-Kompatibilität, hochwertigen PDF-Export und Dokumentversionsverwaltung mit nativer Unterstützung für mehrere Sprachen und professionelle Vorlagen.",
       "challenge": "Entwicklung einer Echtzeit-Bearbeitungsoberfläche, die die Komplexität strukturierter Daten mit einer flüssigen Benutzererfahrung harmonisiert und chirurgische Präzision bei der Erstellung optimierter Dokumente gewährleistet.",
       "solution": "Architektur basierend auf Next.js und Server Actions, integriert mit einer Live-PDF-Rendering-Engine, strenger Validierung mit Zod/Prisma und einer minimalistischen Benutzeroberfläche, die durch Framer Motion und View Transitions unterstützt wird.",
       "results": [
@@ -307,7 +307,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Rekrutierungssystem (ATS)",
-      "description": "Unternehmenstool für Zeiterfassung, Gehaltsabrechnung und Arbeitszeitkonto mit Kanban-Board für Kandidaten.",
+      "description": "Atlas HRMS ist ein integriertes Personalmanagementsystem, entwickelt in einer Hochleistungs-Monorepo-Architektur mit Next.js, NestJS, Prisma und PostgreSQL. Das Projekt vereint in einem Dashboard Module für Mitarbeiterverwaltung, Positionen, Urlaub, digitale Zeiterfassung, flexibles Arbeitszeitkonto, Rekrutierungsprozesse (ATS), Zugriffssteuerung und Berichte mit Kennzahlen.",
       "challenge": "Konsolidierung mehrerer komplexer Geschäftsmodule in einer einheitlichen, durchgehend typisierten Architektur.",
       "solution": "Entwickelt mit NestJS, Next.js, Prisma und PostgreSQL in einem von Turborepo und Docker verwalteten Monorepo.",
       "results": [
@@ -326,7 +326,7 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Komponentenbibliothek",
-      "description": "Open-Source-Komponentenbibliothek für React, inspiriert von shadcn/ui und erstellt mit Tailwind CSS v4.",
+      "description": "Bloom ist eine moderne React-Komponentenbibliothek, inspiriert von shadcn/ui, erstellt mit React, Next.js, Radix UI und Tailwind CSS. Das System bietet über 70 anpassbare Komponenten, zentralisiertes Design-Token-System, interaktive Dokumentation mit Testumgebung, eigene CLI zur Installation per Befehl und Tests mit Vitest, fokussiert auf Barrierefreiheit und einheitliche Interfaces.",
       "challenge": "Gewährleistung maximaler Barrierefreiheit und visueller Konsistenz bei einfacher Installation.",
       "solution": "Modulare Komponenten mit Radix UI, Styling mit Tailwind CSS v4 und Tests mit Vitest/Playwright.",
       "results": [
@@ -345,7 +345,7 @@
     "techicons": {
       "title": "TechIcons",
       "category": "Open-Source-Assets-Bibliothek",
-      "description": "Katalog mit über 290 Technologie-Icons, optimiert für Dokumentationen und Entwicklerprofile.",
+      "description": "TechIcons ist eine Open-Source-Bibliothek mit über 290 Technologiesymbolen zur Bereicherung von READMEs, Portfolios und Projektdokumentationen. Die Symbole stehen für Tools, Frameworks und Dienste in der Softwareentwicklung. Sie wurden für visuelle Konsistenz und hohe Qualität in verschiedenen Auflösungen entworfen, einschließlich nativer Kontrastunterstützung für helle und dunkle Themes.",
       "challenge": "Strukturierung einer konsistenten Icon-Sammlung mit dynamischer Light- und Dark-Theme-Kompatibilität.",
       "solution": "Vektorisierte SVG-Assets mit sauberem Aufbau und automatisiertem Deployment über GitHub Actions.",
       "results": [
@@ -361,10 +361,12 @@
         "Assets Catalog"
       ]
     },
-    "placeholder": {
-      "title": "Demnächst...",
-      "category": "Neues Projekt",
-      "description": "Ein neues spannendes Projekt befindet sich derzeit in Entwicklung und wird bald hier gelistet. Bleiben Sie dran."
+    "powerfit": {
+      "title": "POWER.FIT",
+      "category": "Full Stack Plattform",
+      "description": "POWER.FIT ist eine Full-Stack-Trainingsverwaltungsplattform mit Next.js, Fastify, TypeScript und PostgreSQL. Das System unterstützt bei der Übungsplanung und Verfolgung körperlicher Aktivitäten. Die Webanwendung nutzt SSR-Rendering mit effizientem Frontend-Zustandsmanagement, während die Backend-API sichere Authentifizierung, Zod-Validierung und Datenbankpersistenz über Prisma ORM implementiert.",
+      "cta_frontend": "FRONTEND Repository",
+      "cta_backend": "BACKEND Repository"
     }
   },
   "Footer": {

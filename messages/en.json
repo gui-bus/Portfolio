@@ -290,7 +290,7 @@
     "lume": {
       "title": "Lume",
       "category": "Career Engineering & High-Performance ATS",
-      "description": "Career engineering platform designed for elite professionals, eliminating friction between technical experience and approval in Applicant Tracking Systems (ATS).",
+      "description": "Lume is a complete platform for creating resumes, cover letters, and professional documents built with React, Next.js, and TypeScript. The system allows creating custom layouts, organizing career history, validating resumes for compatibility with recruiting software (ATS), exporting high-quality PDFs, and managing different file versions with native support for multiple languages and professional documents.",
       "challenge": "Develop a real-time editing interface that harmonizes structured data complexity with a fluid user experience, ensuring surgical precision in optimized document generation.",
       "solution": "Architecture based on Next.js and Server Actions, integrating a live PDF rendering engine, rigorous validation with Zod/Prisma, and a minimalist UI powered by Framer Motion and View Transitions.",
       "results": [
@@ -328,7 +328,7 @@
     "magui": {
       "title": "MAGUI.studio",
       "category": "High-End Visual Strategy & Professional Interface Engineering",
-      "description": "Visual engineering and interfaces focused on performance and results for digital systems.",
+      "description": "A premium collection of institutional landing pages developed with React, Next.js, and TypeScript for various market segments and aesthetic styles. Each page was designed from scratch with responsive layouts, reusable components, and modular code structures, applying dynamic animations and SEO performance optimization, focusing on usability and conversion through modern and consistent interfaces.",
       "challenge": "Building an ultra-high-level universal template that unifies engineering rigor (Next.js 16/React 19) with the visual sophistication of authority design, ensuring 100/100 in all Core Web Vitals.",
       "solution": "Architecture based on Next.js App Router, Tailwind CSS v4 and prefix-less i18n, incorporating an industrial workflow with Plop.js generators, unit/E2E testing and automated security and performance auditing.",
       "results": [
@@ -347,7 +347,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Recruitment System (ATS)",
-      "description": "Enterprise payroll, time attendance, and bank of hours system with a Kanban board for candidate management.",
+      "description": "Atlas HRMS is an integrated human resource management system developed in a high-performance monorepo architecture using Next.js, NestJS, Prisma, and PostgreSQL. The project brings together complete modules for employee tracking, positions, vacations, digital timesheets, flexible hour banks, recruitment processes (ATS), role-based access control, and dashboards with management indicators.",
       "challenge": "Consolidate multiple complex business modules into a unified and fully typed end-to-end architecture.",
       "solution": "Developed using NestJS, Next.js, Prisma, and PostgreSQL in a monorepo managed by Turborepo and Docker.",
       "results": [
@@ -366,7 +366,7 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Component Library",
-      "description": "Open source React component library inspired by shadcn/ui and built with Tailwind CSS v4.",
+      "description": "Bloom is a modern React component library inspired by shadcn/ui, built using React, Next.js, Radix UI, and Tailwind CSS. The ecosystem features over 70 highly customizable components, a centralized design tokens system, interactive documentation with a testing playground, its own CLI for command-line installation, and automated tests with Vitest, focusing on accessibility and interface consistency.",
       "challenge": "Ensure maximum accessibility and visual consistency while offering an effortless installation experience for developers.",
       "solution": "Modular components built with Radix UI, styled with Tailwind CSS v4, and tested with Vitest/Playwright.",
       "results": [
@@ -385,7 +385,7 @@
     "techicons": {
       "title": "TechIcons",
       "category": "Open Source Assets Library",
-      "description": "Catalog of 290+ technology icons optimized for project documentation and developer profiles.",
+      "description": "TechIcons is an open source library with over 290 technology icons created to enrich READMEs, portfolios, and project documentations. The icons represent tools, frameworks, and services used in software development, designed to ensure visual consistency and high quality across different resolutions, including native support for high-contrast presentation in both light and dark themes.",
       "challenge": "Organize a consistent catalog of icons with dynamic light and dark theme compatibility.",
       "solution": "Vectorized SVG assets with clean design structure and automated deployment via GitHub Actions.",
       "results": [
@@ -401,10 +401,12 @@
         "Assets Catalog"
       ]
     },
-    "placeholder": {
-      "title": "Coming Soon...",
-      "category": "New Project",
-      "description": "An exciting new project is currently under development and will be listed here soon. Stay tuned for updates."
+    "powerfit": {
+      "title": "POWER.FIT",
+      "category": "Full Stack Platform",
+      "description": "POWER.FIT is a full stack training management platform built with Next.js, Fastify, TypeScript, and PostgreSQL. The system helps in planning exercises and tracking physical routines. The web application uses SSR rendering with efficient state management on the frontend, while the robust backend API implements secure authentication, validation with Zod, and database persistence through Prisma ORM.",
+      "cta_frontend": "FRONTEND Repository",
+      "cta_backend": "BACKEND Repository"
     }
   },
   "Footer": {

@@ -17,6 +17,7 @@ interface ProjectCardClientProps {
     description: string;
     logoId?: string;
     repo?: string;
+    repos?: { label: string; url: string }[];
     demo?: string;
     tags: string[];
     githubHint?: string;
@@ -49,7 +50,7 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
     };
   }, []);
 
-  const hasRepo = !!project.repo;
+  const hasRepo = !!project.repo || (!!project.repos && project.repos.length > 0);
 
   return (
     <motion.div
@@ -117,7 +118,19 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
           )}
 
           <div className="flex flex-wrap gap-6">
-            {project.repo && (
+            {project.repos ? (
+              project.repos.map((r) => (
+                <Link
+                  key={r.url}
+                  href={r.url}
+                  target="_blank"
+                  className="flex items-center gap-2 group/link text-[10px] font-mono uppercase tracking-[0.2em] font-black text-foreground hover:text-yellow-600 transition-colors"
+                >
+                  <GithubLogoIcon size={16} />
+                  {r.label}
+                </Link>
+              ))
+            ) : project.repo ? (
               <Link
                 href={project.repo}
                 target="_blank"
@@ -126,7 +139,7 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
                 <GithubLogoIcon size={16} />
                 {project.ctaGithub || "GitHub"}
               </Link>
-            )}
+            ) : null}
 
             {project.demo && (
               <Link

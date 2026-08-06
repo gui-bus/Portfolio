@@ -38,6 +38,18 @@ export async function ProjectsSection() {
       tags: ["React 19", "Tailwind v4", "Radix UI", "Vitest"],
     },
     {
+      id: "powerfit",
+      title: tProjects("powerfit.title"),
+      category: tProjects("powerfit.category"),
+      description: tProjects("powerfit.description"),
+      logoId: "powerfit",
+      repos: [
+        { label: tProjects("powerfit.cta_frontend"), url: "https://github.com/gui-bus/POWERFIT-Frontend" },
+        { label: tProjects("powerfit.cta_backend"), url: "https://github.com/gui-bus/POWERFIT-API" },
+      ],
+      tags: ["Next.js", "Fastify", "TypeScript", "PostgreSQL", "Prisma"],
+    },
+    {
       id: "magui",
       title: tProjects("magui.title"),
       category: tProjects("magui.category"),
@@ -56,13 +68,6 @@ export async function ProjectsSection() {
       repo: "https://github.com/gui-bus/TechIcons",
       demo: "https://techicons.guibus.dev/",
       tags: ["Open Source", "SVG Assets", "CI/CD", "Automation"],
-    },
-    {
-      id: "placeholder",
-      title: tProjects("placeholder.title"),
-      category: tProjects("placeholder.category"),
-      description: tProjects("placeholder.description"),
-      tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     },
   ];
 
