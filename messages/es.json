@@ -92,10 +92,12 @@
     "desc_typing": "Tipado Fuerte",
     "desc_css": "CSS Orientado a Utilidades",
     "desc_design": "Diseño de Interfaz",
-    "desc_react": "Biblioteca de Componentes",
+    "desc_react": "Biblioteca Frontend",
     "desc_runtime": "Entorno de Ejecución en Servidor",
     "desc_cloud": "Despliegue y Edge",
-    "desc_mobile": "Desarrollo Móvil"
+    "desc_mobile": "Desarrollo Móvil",
+    "desc_nestjs": "Arquitectura Backend",
+    "desc_prisma": "Modelado de Datos y ORM"
   },
   "ProjectsSection": {
     "tag": "Proyectos Seleccionados",
@@ -107,7 +109,8 @@
     "cta_github": "GitHub",
     "decorative_label": "TRABAJOS_SELECCIONADOS",
     "scroll_hint": "[ Arrastra o Desplázate para Explorar ]",
-    "github_hint": "Para detalles de arquitectura, decisiones técnicas y el historial de desarrollo, acceda al repositorio de GitHub."
+    "github_hint": "Para detalles de arquitectura, decisiones técnicas y el historial de desarrollo, acceda al repositorio de GitHub.",
+    "explore_all_github": "¿Quieres ver todos los proyectos? Accede a mi perfil en GitHub"
   },
   "Contact": {
     "status": "Disponible para trabajar",
@@ -307,7 +310,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "Ecosistema ERP y de Reclutamiento (ATS)",
-      "description": "Atlas HRMS es un sistema integrado de gestión de recursos humanos desarrollado en una arquitectura monorepo de alto rendimiento con Next.js, NestJS, Prisma y PostgreSQL. El proyecto reúne en un solo panel módulos para control de empleados, puestos, vacaciones, registro de tiempo digital, banco de horas flexible, procesos de selección (ATS), control de accesos y tableros con indicadores de gestión.",
+      "description": "Atlas HRMS es un sistema integrado de gestión de recursos humanos desarrollado en una arquitectura monorepo con Next.js, NestJS, Prisma y PostgreSQL. El proyecto reúne en un solo panel módulos para control de empleados, puestos, vacaciones, registro de tiempo digital, banco de horas flexible, procesos de selección (ATS), control de accesos y tableros con indicadores de gestión.",
       "challenge": "Consolidar múltiples módulos empresariales en una arquitectura unificada y tipada de extremo a extremo.",
       "solution": "Desarrollado con NestJS, Next.js, Prisma y PostgreSQL en un monorepo gestionado por Turborepo y Docker.",
       "results": [

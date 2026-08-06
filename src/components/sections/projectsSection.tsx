@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import { SectionAnimationWrapper } from "@/components/common/sectionAnimationWrapper";
 import { ProjectCardClient } from "./projectCardClient";
+import Link from "next/link";
+import Image from "next/image";
 
 export async function ProjectsSection() {
   const t = await getTranslations("ProjectsSection");
@@ -15,7 +17,12 @@ export async function ProjectsSection() {
       logoId: "atlas",
       repo: "https://github.com/gui-bus/Atlas-HRMS",
       demo: "https://atlas-web-pt7t.onrender.com/pt/",
-      tags: ["NestJS", "Next.js", "Prisma", "PostgreSQL"],
+      tags: [
+        "TypeScript", "Node.js", "Next.js", "React", "Tailwind CSS",
+        "shadcn/ui", "React Query", "Zustand", "Zod", "NestJS",
+        "Prisma", "PostgreSQL", "JWT", "Axios", "Docker",
+        "Vitest", "Playwright"
+      ],
     },
     {
       id: "lume",
@@ -25,7 +32,11 @@ export async function ProjectsSection() {
       logoId: "lume",
       repo: "https://github.com/gui-bus/Lume",
       demo: "https://lume.guibus.dev",
-      tags: ["Next.js", "React 19", "Zod", "Clerk"],
+      tags: [
+        "React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui",
+        "Framer Motion", "React Hook Form", "Zod", "Prisma", "PostgreSQL",
+        "Clerk", "nuqs", "Vitest", "Playwright"
+      ],
     },
     {
       id: "bloom",
@@ -35,7 +46,10 @@ export async function ProjectsSection() {
       logoId: "bloom",
       repo: "https://github.com/gui-bus/Bloom",
       demo: "https://bloom.guibus.dev/",
-      tags: ["React 19", "Tailwind v4", "Radix UI", "Vitest"],
+      tags: [
+        "React", "Next.js", "TypeScript", "Tailwind CSS",
+        "Framer Motion", "Vitest", "Playwright", "Biome"
+      ],
     },
     {
       id: "powerfit",
@@ -47,7 +61,11 @@ export async function ProjectsSection() {
         { label: tProjects("powerfit.cta_frontend"), url: "https://github.com/gui-bus/POWERFIT-Frontend" },
         { label: tProjects("powerfit.cta_backend"), url: "https://github.com/gui-bus/POWERFIT-API" },
       ],
-      tags: ["Next.js", "Fastify", "TypeScript", "PostgreSQL", "Prisma"],
+      tags: [
+        "React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui",
+        "Framer Motion", "React Hook Form", "TanStack Query", "Axios",
+        "Zod", "Vitest", "Fastify", "Prisma", "PostgreSQL", "Docker"
+      ],
     },
     {
       id: "magui",
@@ -57,7 +75,10 @@ export async function ProjectsSection() {
       logoId: "landingpages",
       repo: "https://github.com/gui-bus/MAGUI-Landing-Pages",
       demo: "https://portfolio.magui.studio/",
-      tags: ["React", "Next.js", "TypeScript", "Tailwind v4"],
+      tags: [
+        "React", "Next.js", "TypeScript", "Tailwind CSS",
+        "Framer Motion", "ESLint"
+      ],
     },
     {
       id: "techicons",
@@ -94,7 +115,7 @@ export async function ProjectsSection() {
           </div>
 
           <div className="lg:col-span-4 border-l border-border pl-8 pb-2">
-            <p className="text-muted-foreground text-lg font-light leading-relaxed max-w-xs">
+            <p className="text-muted-foreground text-lg font-light leading-relaxed">
               {t("github_hint")}
             </p>
           </div>
@@ -114,6 +135,31 @@ export async function ProjectsSection() {
             />
           ))}
         </SectionAnimationWrapper>
+
+        <div className="mt-20 flex justify-center">
+          <Link
+            href="https://github.com/gui-bus"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-4 group cursor-pointer border border-border dark:border-white/10 px-8 py-5 bg-muted/5 hover:border-yellow-600 dark:hover:border-yellow-500 transition-all duration-300 select-none text-[11px] font-mono uppercase tracking-[0.2em] font-black text-foreground"
+          >
+            <Image
+              src="/utils/icons/github_white.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              className="hidden dark:block object-contain"
+            />
+            <Image
+              src="/utils/icons/github_black.svg"
+              alt="GitHub"
+              width={20}
+              height={20}
+              className="block dark:hidden object-contain"
+            />
+            <span>{t("explore_all_github")}</span>
+          </Link>
+        </div>
       </div>
     </section>
   );

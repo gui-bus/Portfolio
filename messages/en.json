@@ -92,12 +92,14 @@
     "desc_typing": "Strong Typing",
     "desc_css": "Utility-First CSS",
     "desc_design": "Interface Design",
-    "desc_react": "Component Library",
+    "desc_react": "Frontend Library",
     "desc_runtime": "Server-side Runtime",
     "desc_cloud": "Deployment & Edge",
     "desc_mobile": "Mobile Development",
     "desc_backend": "Scalable Backend",
-    "desc_ux_ui": "UX/UI Design"
+    "desc_ux_ui": "UX/UI Design",
+    "desc_nestjs": "Backend Architecture",
+    "desc_prisma": "Data Modeling & ORM"
   },
   "ProjectsSection": {
     "tag": "Selected Projects",
@@ -109,7 +111,8 @@
     "cta_github": "GitHub",
     "decorative_label": "SELECTED_WORKS",
     "scroll_hint": "[ Drag or Scroll to Explore ]",
-    "github_hint": "For architectural details, technical decisions, and development history, access the GitHub repository."
+    "github_hint": "For architectural details, technical decisions, and development history, access the GitHub repository.",
+    "explore_all_github": "Want to see all projects? Access my profile on GitHub"
   },
   "Contact": {
     "status": "Available for work",
@@ -328,7 +331,7 @@
     "magui": {
       "title": "MAGUI.studio",
       "category": "High-End Visual Strategy & Professional Interface Engineering",
-      "description": "A premium collection of institutional landing pages developed with React, Next.js, and TypeScript for various market segments and aesthetic styles. Each page was designed from scratch with responsive layouts, reusable components, and modular code structures, applying dynamic animations and SEO performance optimization, focusing on usability and conversion through modern and consistent interfaces.",
+      "description": "A collection of institutional landing pages developed with React, Next.js, and TypeScript for various market segments and aesthetic styles. Each page was designed from scratch with responsive layouts, reusable components, and modular code structures, applying dynamic animations and performance optimization, focusing on usability and conversion through modern and consistent interfaces.",
       "challenge": "Building an ultra-high-level universal template that unifies engineering rigor (Next.js 16/React 19) with the visual sophistication of authority design, ensuring 100/100 in all Core Web Vitals.",
       "solution": "Architecture based on Next.js App Router, Tailwind CSS v4 and prefix-less i18n, incorporating an industrial workflow with Plop.js generators, unit/E2E testing and automated security and performance auditing.",
       "results": [
@@ -347,7 +350,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Recruitment System (ATS)",
-      "description": "Atlas HRMS is an integrated human resource management system developed in a high-performance monorepo architecture using Next.js, NestJS, Prisma, and PostgreSQL. The project brings together complete modules for employee tracking, positions, vacations, digital timesheets, flexible hour banks, recruitment processes (ATS), role-based access control, and dashboards with management indicators.",
+      "description": "Atlas HRMS is an integrated human resource management system developed in a monorepo architecture using Next.js, NestJS, Prisma, and PostgreSQL. The project brings together complete modules for employee tracking, positions, vacations, digital timesheets, flexible hour banks, recruitment processes (ATS), role-based access control, and dashboards with management indicators.",
       "challenge": "Consolidate multiple complex business modules into a unified and fully typed end-to-end architecture.",
       "solution": "Developed using NestJS, Next.js, Prisma, and PostgreSQL in a monorepo managed by Turborepo and Docker.",
       "results": [

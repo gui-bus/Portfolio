@@ -92,10 +92,12 @@
     "desc_typing": "Typage fort",
     "desc_css": "CSS utilitaire",
     "desc_design": "Design d'interface",
-    "desc_react": "Bibliothèque de composants",
+    "desc_react": "Bibliothèque Frontend",
     "desc_runtime": "Runtime côté serveur",
     "desc_cloud": "Déploiement & Edge",
-    "desc_mobile": "Développement mobile"
+    "desc_mobile": "Développement mobile",
+    "desc_nestjs": "Architecture Backend",
+    "desc_prisma": "Modélisation de Données & ORM"
   },
   "ProjectsSection": {
     "tag": "Projets sélectionnés",
@@ -107,7 +109,8 @@
     "cta_github": "GitHub",
     "decorative_label": "TRAVAUX_SELECTIONNES",
     "scroll_hint": "[ Faites glisser ou défilez para explorer ]",
-    "github_hint": "Pour plus de détails sur l'architecture, les décisions techniques et l'historique du développement, accédez au dépôt GitHub."
+    "github_hint": "Pour plus de détails sur l'architecture, les décisions techniques et l'historique du développement, accédez au dépôt GitHub.",
+    "explore_all_github": "Vous voulez voir tous les projets ? Visitez mon profil sur GitHub"
   },
   "Contact": {
     "status": "Disponible pour travailler",
@@ -307,7 +310,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "Système ERP & Recrutement (ATS)",
-      "description": "Atlas HRMS est un système intégré de gestion des ressources humaines développé dans une architecture monorepo haute performance avec Next.js, NestJS, Prisma et PostgreSQL. Le projet rassemble des modules complets pour le suivi des employés, postes, congés, feuille de temps digitale, banque d'heures, suivi des recrutements (ATS), gestion des accès et tableaux de bord d'indicateurs.",
+      "description": "Atlas HRMS est un système intégré de gestion des ressources humaines développé dans une architecture monorepo avec Next.js, NestJS, Prisma et PostgreSQL. Le projet regroupe des modules complets pour le suivi des employés, postes, congés, feuille de temps digitale, banque d'heures, suivi des recrutements (ATS), gestion des accès et tableaux de bord d'indicateurs.",
       "challenge": "Consolider plusieurs modules d'affaires complexes dans une architecture unifiée et entièrement typée de bout en bout.",
       "solution": "Développé avec NestJS, Next.js, Prisma et PostgreSQL au sein d'un monorepo géré par Turborepo et Docker.",
       "results": [

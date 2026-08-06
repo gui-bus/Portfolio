@@ -22,11 +22,14 @@ export function ExperienceLogoClient() {
   const logoSrc = `/utils/experiences/unifahe/logo-${isDark ? "white" : "black"}.svg`;
 
   return (
-    <div className="relative w-28 h-10 flex items-center mb-2">
+    <div className="relative flex items-center mb-2">
       <Image
         src={logoSrc}
         alt="Unifahe Logo"
-        fill
+        width={112*2}
+        height={40}
+        priority
+        unoptimized
         className="object-contain object-left"
       />
     </div>

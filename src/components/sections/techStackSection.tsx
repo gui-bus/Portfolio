@@ -10,25 +10,21 @@ export async function TechStackSection() {
   const t = await getTranslations("TechStack");
 
   const primaryTech = [
-    { name: "Next.js", iconName: "Globe", description: t("desc_frontend") },
     { name: "React", iconName: "Lightning", description: t("desc_react") },
+    { name: "Next.js", iconName: "Globe", description: t("desc_frontend") },
     { name: "TypeScript", iconName: "Code", description: t("desc_typing") },
     { name: "Tailwind", iconName: "PaintBrush", description: t("desc_css") },
-    { name: "Fastify", iconName: "Zap", description: t("desc_backend") },
+    { name: "NestJS", iconName: "Cpu", description: t("desc_nestjs") },
+    { name: "Prisma", iconName: "Database", description: t("desc_prisma") },
     { name: "Figma", iconName: "BoundingBox", description: t("desc_design") },
     {
-      name: "UX/UI Design",
+      name: "UI/UX Design",
       iconName: "UserFocus",
       description: t("desc_ux_ui"),
     },
-    { name: "Vercel", iconName: "Cloud", description: t("desc_cloud") },
   ];
 
   const secondaryTools = [
-    "React",
-    "NextJS",
-    "TypeScript",
-    "Tailwind",
     "ShadCN",
     "Framer Motion",
     "Phosphor Icons",
@@ -39,8 +35,7 @@ export async function TechStackSection() {
     "Axios",
     "Zod",
     "Node JS",
-    "Nest JS",
-    "Prisma",
+    "Fastify",
     "PostgreSQL",
     "Redis",
     "BullMQ",
@@ -67,7 +62,6 @@ export async function TechStackSection() {
     "pnpm",
     "Vercel",
     "Render",
-    "Figma",
     "ClickUp",
     "Google Analytics",
     "Cursor",

@@ -92,12 +92,14 @@
     "desc_typing": "Tipagem Forte",
     "desc_css": "CSS Utilitário",
     "desc_design": "Design de Interface",
-    "desc_react": "Biblioteca de Componentes",
+    "desc_react": "Biblioteca Frontend",
     "desc_runtime": "Runtime Server-side",
     "desc_cloud": "Deployment & Edge",
     "desc_mobile": "Desenvolvimento Mobile",
     "desc_backend": "Backend Escalável",
-    "desc_ux_ui": "UX/UI Design"
+    "desc_ux_ui": "UX/UI Design",
+    "desc_nestjs": "Arquitetura Backend",
+    "desc_prisma": "Modelagem de Dados & ORM"
   },
   "ProjectsSection": {
     "tag": "Projetos Selecionados",
@@ -109,7 +111,8 @@
     "cta_github": "GitHub",
     "decorative_label": "TRABALHOS_SELECIONADOS",
     "scroll_hint": "[ Arraste ou Scroll para Explorar ]",
-    "github_hint": "Para detalhes de arquitetura, decisões técnicas e histórico de desenvolvimento, acesse o repositório no GitHub."
+    "github_hint": "Para detalhes de arquitetura, decisões técnicas e histórico de desenvolvimento, acesse o repositório no GitHub.",
+    "explore_all_github": "Quer ver todos os projetos? Acesse o meu perfil no GitHub"
   },
   "Contact": {
     "status": "Disponível para trabalho",
@@ -328,7 +331,7 @@
     "magui": {
       "title": "MAGUI.studio",
       "category": "High-End Visual Strategy & Professional Interface Engineering",
-      "description": "Uma coleção premium de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance SEO, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
+      "description": "Uma coleção de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
       "challenge": "Construir um template universal de altíssimo nível que unifique o rigor da engenharia (Next.js 16/React 19) com a sofisticação visual do design de autoridade, garantindo 100/100 em todos os Core Web Vitals.",
       "solution": "Arquitetura baseada em Next.js App Router, Tailwind CSS v4 e i18n prefix-less, incorporando um workflow industrial com geradores Plop.js, testes unitários/E2E e auditoria automatizada de segurança e performance.",
       "results": [
@@ -347,7 +350,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Sistema de Recrutamento (ATS)",
-      "description": "O Atlas HRMS é um sistema integrado para gestão de recursos humanos desenvolvido em arquitetura monorepo de alta performance com Next.js, NestJS, Prisma e PostgreSQL. O projeto reúne em um único painel módulos completos para controle de colaboradores, cargos, férias, folha de ponto digital, banco de horas flexível, acompanhamento de processos seletivos (ATS), controle de acessos e dashboards com indicadores administrativos.",
+      "description": "O Atlas HRMS é um sistema integrado para gestão de recursos humanos desenvolvido em arquitetura monorepo com Next.js, NestJS, Prisma e PostgreSQL. O projeto reúne em um único painel módulos completos para controle de colaboradores, cargos, férias, folha de ponto digital, banco de horas flexível, acompanhamento de processos seletivos (ATS), controle de acessos e dashboards com indicadores administrativos.",
       "challenge": "Consolidar múltiplos módulos empresariais em uma arquitetura unificada e tipada de ponta a ponta.",
       "solution": "Desenvolvimento com NestJS, Next.js, Prisma e PostgreSQL em um monorepo gerenciado por Turborepo e Docker.",
       "results": [
@@ -404,7 +407,7 @@
     "powerfit": {
       "title": "POWER.FIT",
       "category": "Plataforma Full Stack",
-      "description": "O POWER.FIT é uma plataforma full stack para gerenciamento de treinos desenvolvida com Next.js, Fastify, TypeScript e PostgreSQL. O sistema auxilia no planejamento de exercícios e acompanhamento de rotinas físicas. A aplicação web utiliza renderização SSR com gerenciamento eficiente de estado no frontend, enquanto a API backend robusta implementa autenticação segura, validações com Zod e persistência através do Prisma ORM.",
+      "description": "O POWER.FIT é uma plataforma full stack para gerenciamento de treinos desenvolvida com Next.js, Fastify, TypeScript e PostgreSQL. O sistema auxilia no planejamento de exercícios e acompanhamento de rotinas físicas. A aplicação web utiliza renderização SSR com gerenciamento eficiente de estado no frontend, enquanto a API backend implementa autenticação segura, validações com Zod e persistência através do Prisma ORM.",
       "cta_frontend": "Repositório FRONTEND",
       "cta_backend": "Repositório BACKEND"
     }

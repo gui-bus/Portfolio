@@ -25,13 +25,17 @@ export function ProjectLogoClient({ projectId, alt }: ProjectLogoProps) {
 
   const isDark = resolvedTheme === "dark";
   const logoSrc = `/projects/logos/${projectId}/logo_${isDark ? "white" : "black"}.svg`;
+  const isAtlasOrBloom = projectId === "atlas" || projectId === "bloom";
 
   return (
-    <div className="relative w-64 h-24 flex items-center">
+    <div className="relative flex items-center justify-end">
       <Image
         src={logoSrc}
         alt={alt}
-        fill
+        width={isAtlasOrBloom ? 96 : 128}
+        height={96}
+        priority
+        unoptimized
         className="object-contain object-left"
       />
     </div>

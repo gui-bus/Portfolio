@@ -59,13 +59,12 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative bg-background p-10 md:p-12 overflow-hidden transition-colors hover:bg-muted/50 dark:hover:bg-zinc-900/20 flex flex-col justify-between min-h-[450px]"
+      className="group relative bg-background p-10 md:p-12 overflow-hidden transition-colors hover:bg-muted/50 dark:hover:bg-zinc-900/20 flex flex-col justify-between min-h-112.5"
     >
       <div className="absolute inset-0 bg-yellow-500/3 dark:bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <div className="relative z-10 flex flex-col h-full justify-between gap-8">
         <div>
-          {/* Top Row: Index and Logo */}
           <div className="flex justify-between items-start mb-8">
             <span className="text-4xl font-black text-muted dark:text-zinc-900 group-hover:text-black dark:group-hover:text-white transition-colors">
               0{index + 1}
@@ -83,7 +82,6 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
             </div>
           </div>
 
-          {/* Category & Title */}
           <span className="text-[9px] font-mono uppercase tracking-widest text-yellow-600 dark:text-yellow-500 mb-2 block font-black">
             [{project.category}]
           </span>
@@ -91,12 +89,10 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
             {project.title}
           </h3>
           
-          {/* Description */}
           <p className="text-muted-foreground text-sm leading-relaxed font-light mb-6">
             {project.description}
           </p>
 
-          {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">
             {project.tags.map((tag) => (
               <span
@@ -109,7 +105,6 @@ export function ProjectCardClient({ index, project }: ProjectCardClientProps) {
           </div>
         </div>
 
-        {/* Footer Actions & Hint */}
         <div className="space-y-4 border-t border-border dark:border-white/5 pt-6 mt-auto">
           {hasRepo && project.githubHint && (
             <p className="text-[10px] font-mono text-muted-foreground/60 leading-relaxed">

@@ -92,10 +92,12 @@
     "desc_typing": "Starke Typisierung",
     "desc_css": "Utility-First CSS",
     "desc_design": "Interface Design",
-    "desc_react": "Komponenten-Bibliothek",
+    "desc_react": "Frontend-Bibliothek",
     "desc_runtime": "Server-side Runtime",
     "desc_cloud": "Deployment & Edge",
-    "desc_mobile": "Mobile Entwicklung"
+    "desc_mobile": "Mobile Entwicklung",
+    "desc_nestjs": "Backend-Architektur",
+    "desc_prisma": "Datenmodellierung & ORM"
   },
   "ProjectsSection": {
     "tag": "Ausgewählte Projekte",
@@ -107,7 +109,8 @@
     "cta_github": "GitHub",
     "decorative_label": "AUSGEWÄHLTE_ARBEITEN",
     "scroll_hint": "[ Ziehen oder Scrollen zum Erkunden ]",
-    "github_hint": "Für Details zur Architektur, technische Entscheidungen und den Entwicklungsverlauf rufen Sie bitte das GitHub-Repository auf."
+    "github_hint": "Für Details zur Architektur, technische Entscheidungen und den Entwicklungsverlauf rufen Sie bitte das GitHub-Repository auf.",
+    "explore_all_github": "Möchten Sie alle Projekte sehen? Besuchen Sie mein Profil auf GitHub"
   },
   "Contact": {
     "status": "Verfügbar für Anfragen",
@@ -307,7 +310,7 @@
     "atlas": {
       "title": "Atlas HRMS",
       "category": "ERP & Rekrutierungssystem (ATS)",
-      "description": "Atlas HRMS ist ein integriertes Personalmanagementsystem, entwickelt in einer Hochleistungs-Monorepo-Architektur mit Next.js, NestJS, Prisma und PostgreSQL. Das Projekt vereint in einem Dashboard Module für Mitarbeiterverwaltung, Positionen, Urlaub, digitale Zeiterfassung, flexibles Arbeitszeitkonto, Rekrutierungsprozesse (ATS), Zugriffssteuerung und Berichte mit Kennzahlen.",
+      "description": "Atlas HRMS is ein integriertes Personalmanagementsystem, entwickelt in einer Monorepo-Architektur mit Next.js, NestJS, Prisma und PostgreSQL. Das Projekt vereint in einem Dashboard Module für Mitarbeiterverwaltung, Positionen, Urlaub, digitale Zeiterfassung, flexibles Arbeitszeitkonto, Rekrutierungsprozesse (ATS), Zugriffssteuerung und Berichte mit Kennzahlen.",
       "challenge": "Konsolidierung mehrerer komplexer Geschäftsmodule in einer einheitlichen, durchgehend typisierten Architektur.",
       "solution": "Entwickelt mit NestJS, Next.js, Prisma und PostgreSQL in einem von Turborepo und Docker verwalteten Monorepo.",
       "results": [

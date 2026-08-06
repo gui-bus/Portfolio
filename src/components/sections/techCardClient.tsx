@@ -12,6 +12,8 @@ import {
   DatabaseIcon,
   CloudIcon,
   DeviceMobileIcon,
+  UserFocusIcon,
+  CpuIcon,
 } from "@phosphor-icons/react";
 import { gsap } from "gsap";
 import { fadeInUp } from "@/lib/animations";
@@ -25,6 +27,9 @@ const iconsMap: Record<string, Icon> = {
   Database: DatabaseIcon,
   Cloud: CloudIcon,
   DeviceMobile: DeviceMobileIcon,
+  UserFocus: UserFocusIcon,
+  Zap: CpuIcon,
+  Cpu: CpuIcon,
 };
 
 interface TechCardClientProps {
