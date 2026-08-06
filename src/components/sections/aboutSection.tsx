@@ -21,7 +21,7 @@ export async function AboutSection() {
                   {t("tag")}
                 </span>
               </div>
-              
+
               <h2 className="text-5xl md:text-7xl xl:text-8xl font-black uppercase tracking-tighter leading-[0.85] text-foreground mb-12">
                 {t("title_top")} <br />
                 <span className="outline-text-global italic">
@@ -45,7 +45,7 @@ export async function AboutSection() {
               <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-yellow-600 dark:text-yellow-500 font-black block">
                 [ {t("experience_title")} ]
               </span>
-              
+
               <div className="space-y-4">
                 <ExperienceLogoClient />
                 <div className="space-y-2">
@@ -63,17 +63,45 @@ export async function AboutSection() {
               <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-yellow-600 dark:text-yellow-500 font-black block">
                 [ {t("education_title")} ]
               </span>
-              
+
               <div className="space-y-6">
                 <p className="text-sm font-light text-muted-foreground leading-relaxed">
                   {t("education_description")}
                 </p>
-                
-                <div className="flex flex-wrap items-center gap-6">
-                  <Image src="/utils/courses/ux-unicornio.svg" alt="UX Unicórnio" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/design-boost.svg" alt="Design Boost" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/sujeito-programador.svg" alt="Sujeito Programador" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
-                  <Image src="/utils/courses/fullstack-club.svg" alt="Fullstack Club" width={150} height={48} className="object-contain object-left transition-transform duration-300 hover:scale-105" />
+
+                <div className="grid grid-cols-4 gap-6">
+                  <Image
+                    src="/utils/courses/ux-unicornio.svg"
+                    alt="UX Unicórnio"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-contain object-left transition-transform duration-300 hover:scale-105 aspect-square w-full"
+                  />
+                  <Image
+                    src="/utils/courses/design-boost.svg"
+                    alt="Design Boost"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-contain object-left transition-transform duration-300 hover:scale-105 aspect-square w-full"
+                  />
+                  <Image
+                    src="/utils/courses/sujeito-programador.svg"
+                    alt="Sujeito Programador"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-contain object-left transition-transform duration-300 hover:scale-105 aspect-square w-full"
+                  />
+                  <Image
+                    src="/utils/courses/fullstack-club.svg"
+                    alt="Fullstack Club"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="object-contain object-left transition-transform duration-300 hover:scale-105 aspect-square w-full"
+                  />
                 </div>
               </div>
             </div>

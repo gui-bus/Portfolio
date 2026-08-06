@@ -1,10 +1,9 @@
 {
   "Header": {
     "work": "Projets",
-    "about": "Approche",
-    "services": "Expertise",
-    "contact": "Contact",
-    "cta": "Lancer un projet"
+    "about": "À propos",
+    "tech": "Technologies",
+    "contact": "Contact"
   },
   "Hero": {
     "status": "Disponible pour de nouveaux défis",
@@ -377,7 +376,8 @@
     "title_bottom": "en performance.",
     "links_label": "Liens",
     "copyright_label": "Développeur Full-stack & Designer",
-    "back_to_top": "Retour en haut"
+    "back_to_top": "Retour en haut",
+    "status_label": "Statut"
   },
   "ThemeToggle": {
     "light": "Mode Clair",

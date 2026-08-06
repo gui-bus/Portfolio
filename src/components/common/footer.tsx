@@ -3,20 +3,19 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowUpIcon } from "@phosphor-icons/react";
+import Link from "next/link";
+import Image from "next/image";
 import { Logo } from "./logo";
 import { fadeInUp, staggerContainer } from "@/lib/animations";
-
-const portfolioUrl = "https://github.com/gui-bus";
 
 export function Footer() {
   const t = useTranslations("Footer");
   const tHeader = useTranslations("Header");
 
   const navItems = [
-    { key: "work", href: portfolioUrl },
-    { key: "about", href: "#methodology" },
-    { key: "services", href: "#services" },
-    { key: "contact", href: "#contact" },
+    { key: "about", href: "#about-me" },
+    { key: "work", href: "#projects" },
+    { key: "tech", href: "#tech-stack" },
   ];
 
   const scrollToTop = () => {
@@ -24,80 +23,96 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative bg-background border-t border-border dark:border-white/5 overflow-hidden transition-colors pt-32 pb-12 grid-footer">
-      <div className="max-w-400 mx-auto px-6 md:px-12 relative z-10">
-        <div className="absolute -top-12 left-0 w-full flex justify-center opacity-[0.03] pointer-events-none select-none overflow-hidden">
-          <span className="text-[20vw] font-black uppercase whitespace-nowrap tracking-tighter italic outline-text-footer">
-            GUIBUS.DEV
-          </span>
-        </div>
-
+    <footer className="relative bg-background text-foreground overflow-hidden py-16 border-t border-border dark:border-white/5 transition-colors duration-500">
+      <div className="max-w-400 mx-auto px-6 relative z-10 w-full">
         <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-32 relative items-center"
+          className="flex flex-col md:flex-row items-center justify-between gap-10 pb-12"
         >
-          {/* Brand Column */}
           <motion.div
             variants={fadeInUp}
-            className="lg:col-span-4 flex flex-col gap-10"
+            className="flex flex-col gap-3 items-center md:items-start"
           >
-            <Logo width={140} height={45} />
+            <Logo width={120} height={38} />
           </motion.div>
 
-          {/* Links Column */}
-          <div className="lg:col-span-8 flex flex-col sm:flex-row justify-between items-center gap-12">
-            <motion.div
-              variants={fadeInUp}
-              className="flex items-center gap-12"
+          <motion.div variants={fadeInUp} className="flex items-center gap-6">
+            <Link
+              href="https://github.com/gui-bus"
+              target="_blank"
+              rel="noreferrer"
+              className="group transition-transform hover:-translate-y-1 duration-300"
             >
-              <nav className="flex flex-wrap justify-center sm:justify-start gap-x-12 gap-y-6">
-                {navItems.map((item) => (
-                  <a
-                    key={item.key}
-                    href={item.href}
-                    className="text-xs text-muted-foreground hover:text-yellow-600 dark:hover:text-white transition-colors font-black uppercase tracking-[0.2em]"
-                  >
-                    {tHeader(item.key)}
-                  </a>
-                ))}
-              </nav>
-            </motion.div>
+              <Image
+                src="/utils/icons/github_white.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="hidden dark:block object-contain"
+              />
+              <Image
+                src="/utils/icons/github_black.svg"
+                alt="GitHub"
+                width={40}
+                height={40}
+                className="block dark:hidden object-contain"
+              />
+            </Link>
 
-            <motion.div
-              variants={fadeInUp}
-              className="flex flex-col gap-8 items-end justify-end"
+            <Link
+              href="https://linkedin.com/in/guibus"
+              target="_blank"
+              rel="noreferrer"
+              className="group transition-transform hover:-translate-y-1 duration-300"
             >
-              <button
-                onClick={scrollToTop}
-                className="group flex items-center gap-4 text-[10px] font-mono uppercase tracking-[0.4em] text-muted-foreground hover:text-yellow-600 dark:hover:text-white transition-colors cursor-pointer font-black"
-              >
-                {t("back_to_top")}
-                <div className="p-3 border border-border dark:border-white/10 group-hover:border-yellow-600 group-hover:bg-yellow-600/5 transition-all">
-                  <ArrowUpIcon
-                    weight="bold"
-                    size={16}
-                    className="group-hover:-translate-y-1 transition-transform"
-                  />
-                </div>
-              </button>
-            </motion.div>
-          </div>
+              <Image
+                src="/utils/icons/linkedin.svg"
+                alt="LinkedIn"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+            </Link>
+          </motion.div>
         </motion.div>
 
-        {/* Bottom Bar */}
-        <div className="pt-12 border-t border-border dark:border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 w-full md:w-auto">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full md:w-auto">
             <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-[0.3em] font-black">
               © {new Date().getFullYear()} GUIBUS.DEV
             </p>
-            <div className="hidden md:block h-px w-12 bg-border dark:bg-white/5" />
-            <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-[0.3em] font-black">
-              {t("copyright_label")}
-            </p>
+
+            <div className="hidden md:block h-3 w-px bg-border dark:bg-white/10" />
+
+            <nav className="flex items-center gap-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className="text-muted-foreground hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors text-[10px] font-mono uppercase tracking-[0.2em] font-black"
+                >
+                  {tHeader(item.key)}
+                </Link>
+              ))}
+            </nav>
           </div>
+
+          <button
+            onClick={scrollToTop}
+            className="group flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.4em] text-muted-foreground hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors cursor-pointer font-black"
+          >
+            {t("back_to_top")}
+            <div className="p-2 border border-border dark:border-white/10 group-hover:border-yellow-600 dark:group-hover:border-yellow-500 group-hover:bg-yellow-600/5 transition-all">
+              <ArrowUpIcon
+                weight="bold"
+                size={12}
+                className="group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+            </div>
+          </button>
         </div>
       </div>
     </footer>

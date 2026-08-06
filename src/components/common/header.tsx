@@ -46,45 +46,16 @@ function NavItem({ item, t, active, onClick }: NavItemProps) {
   );
 }
 
-interface CtaProps {
-  scrolled: boolean;
-  text: string;
-  onClick: () => void;
-}
-
-function CTA({ scrolled, text, onClick }: CtaProps) {
-  return (
-    <motion.button
-      onClick={onClick}
-      className={cn(
-        "relative overflow-hidden px-6 md:px-10 py-3 rounded-none font-black text-[10px] uppercase tracking-[0.3em] transition-all duration-500 cursor-pointer group",
-        scrolled
-          ? "bg-yellow-600 dark:bg-yellow-500 text-white hover:bg-foreground dark:hover:bg-white dark:hover:text-black"
-          : "bg-foreground dark:bg-white text-background dark:text-black hover:bg-yellow-600 dark:hover:bg-yellow-500 hover:text-white",
-      )}
-      whileTap={{ scale: 0.95 }}
-    >
-      <span className="relative z-10">{text}</span>
-      <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-sweep pointer-events-none" />
-    </motion.button>
-  );
-}
-
-interface HeaderProps {
-  onStartProject: () => void;
-}
-
-export function Header({ onStartProject }: HeaderProps) {
+export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const t = useTranslations("Header");
 
   const navItems = [
-    { key: "about", href: "#methodology" },
-    { key: "services", href: "#services" },
+    { key: "about", href: "#about-me" },
     { key: "work", href: "#projects" },
-    { key: "contact", href: "#contact" },
+    { key: "tech", href: "#tech-stack" },
   ];
 
   useEffect(() => {
@@ -207,15 +178,7 @@ export function Header({ onStartProject }: HeaderProps) {
               <ThemeToggle />
             </div>
 
-            <div className="h-8 w-px bg-border dark:bg-white/10 hidden lg:block mx-1" />
 
-            <div className="hidden md:block">
-              <CTA
-                scrolled={scrolled}
-                text={t("cta")}
-                onClick={onStartProject}
-              />
-            </div>
 
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -333,15 +296,7 @@ export function Header({ onStartProject }: HeaderProps) {
                 </div>
               </div>
 
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  onStartProject();
-                }}
-                className="w-full bg-yellow-600 dark:bg-yellow-500 text-white py-6 font-black text-xs uppercase tracking-[0.4em] hover:bg-foreground dark:hover:bg-white dark:hover:text-black transition-all"
-              >
-                {t("cta")}
-              </button>
+
             </div>
           </motion.div>
         )}

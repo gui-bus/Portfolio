@@ -1,10 +1,9 @@
 {
   "Header": {
     "work": "Projekte",
-    "about": "Ansatz",
-    "services": "Expertise",
-    "contact": "Kontakt",
-    "cta": "Projekt starten"
+    "about": "Über mich",
+    "tech": "Tech Stack",
+    "contact": "Kontakt"
   },
   "Hero": {
     "status": "Verfügbar für neue Herausforderungen",
@@ -377,7 +376,8 @@
     "title_bottom": "Performance verwandeln.",
     "links_label": "Links",
     "copyright_label": "Full-Stack Entwickler & Designer",
-    "back_to_top": "Nach oben"
+    "back_to_top": "Nach oben",
+    "status_label": "Status"
   },
   "ThemeToggle": {
     "light": "Heller Modus",

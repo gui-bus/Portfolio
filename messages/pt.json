@@ -1,10 +1,9 @@
 {
   "Header": {
-    "work": "Trabalhos",
-    "about": "Abordagem",
-    "services": "Especialidades",
-    "contact": "Contato",
-    "cta": "Iniciar Projeto"
+    "work": "Projetos",
+    "about": "Sobre Mim",
+    "tech": "Tecnologias",
+    "contact": "Contato"
   },
   "Hero": {
     "status": "Disponível para novos desafios",
@@ -417,7 +416,8 @@
     "title_bottom": "em performance.",
     "links_label": "Links",
     "copyright_label": "Desenvolvedor Full-stack & Designer",
-    "back_to_top": "Voltar ao topo"
+    "back_to_top": "Voltar ao topo",
+    "status_label": "Status"
   },
   "ThemeToggle": {
     "light": "Modo Claro",

@@ -1,10 +1,9 @@
 {
   "Header": {
-    "work": "Work",
-    "about": "Approach",
-    "services": "Expertise",
-    "contact": "Contact",
-    "cta": "Start a Project"
+    "work": "Projects",
+    "about": "About Me",
+    "tech": "Tech Stack",
+    "contact": "Contact"
   },
   "Hero": {
     "status": "Available for new challenges",
@@ -417,7 +416,8 @@
     "title_bottom": "into performance.",
     "links_label": "Links",
     "copyright_label": "Full-stack Developer & Designer",
-    "back_to_top": "Back to top"
+    "back_to_top": "Back to top",
+    "status_label": "Status"
   },
   "ThemeToggle": {
     "light": "Light Mode",
