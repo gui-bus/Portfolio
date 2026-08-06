@@ -2,48 +2,25 @@
 
 import { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import {
-  Icon,
-  GlobeIcon,
-  CodeIcon,
-  PaintBrushIcon,
-  BoundingBoxIcon,
-  LightningIcon,
-  DatabaseIcon,
-  CloudIcon,
-  DeviceMobileIcon,
-  UserFocusIcon,
-  CpuIcon,
-} from "@phosphor-icons/react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 import { gsap } from "gsap";
 import { fadeInUp } from "@/lib/animations";
-
-const iconsMap: Record<string, Icon> = {
-  Globe: GlobeIcon,
-  Code: CodeIcon,
-  PaintBrush: PaintBrushIcon,
-  BoundingBox: BoundingBoxIcon,
-  Lightning: LightningIcon,
-  Database: DatabaseIcon,
-  Cloud: CloudIcon,
-  DeviceMobile: DeviceMobileIcon,
-  UserFocus: UserFocusIcon,
-  Zap: CpuIcon,
-  Cpu: CpuIcon,
-};
 
 interface TechCardClientProps {
   tech: {
     name: string;
-    iconName: string;
+    iconSrcLight: string;
+    iconSrcDark: string;
     description: string;
   };
   index: number;
 }
 
 export function TechCardClient({ tech, index }: TechCardClientProps) {
-  const IconComponent = iconsMap[tech.iconName] || CodeIcon;
   const cardRef = useRef<HTMLDivElement>(null);
+  const { resolvedTheme } = useTheme();
+  const iconSrc = resolvedTheme === "dark" ? tech.iconSrcDark : tech.iconSrcLight;
 
   useEffect(() => {
     if (!cardRef.current) return;
@@ -74,10 +51,14 @@ export function TechCardClient({ tech, index }: TechCardClientProps) {
 
         <div className="relative z-10 flex flex-col gap-4">
           <motion.div
-            whileHover={{ scale: 1.2, rotate: 10 }}
-            className="text-muted-foreground group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transition-colors duration-500"
           >
-            <IconComponent size={32} weight="thin" />
+            <Image
+              src={iconSrc}
+              alt={tech.name}
+              width={32}
+              height={32}
+              className="object-contain"
+            />
           </motion.div>
           <div>
             <h4 className="font-bold text-foreground text-xl tracking-tight uppercase italic">

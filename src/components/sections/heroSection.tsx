@@ -83,7 +83,7 @@ export async function HeroSection() {
                   >
                     <div className="absolute top-0 left-0 w-full h-0.5 bg-yellow-600/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
                     <Image
-                      src="/utils/icons/lume_icon.png"
+                      src="/utils/icons/lume_icon.svg"
                       alt="Lume"
                       width={24}
                       height={24}

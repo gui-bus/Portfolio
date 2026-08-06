@@ -10,16 +10,52 @@ export async function TechStackSection() {
   const t = await getTranslations("TechStack");
 
   const primaryTech = [
-    { name: "React", iconName: "Lightning", description: t("desc_react") },
-    { name: "Next.js", iconName: "Globe", description: t("desc_frontend") },
-    { name: "TypeScript", iconName: "Code", description: t("desc_typing") },
-    { name: "Tailwind", iconName: "PaintBrush", description: t("desc_css") },
-    { name: "NestJS", iconName: "Cpu", description: t("desc_nestjs") },
-    { name: "Prisma", iconName: "Database", description: t("desc_prisma") },
-    { name: "Figma", iconName: "BoundingBox", description: t("desc_design") },
+    {
+      name: "React",
+      iconSrcLight: "/utils/icons/react.svg",
+      iconSrcDark: "/utils/icons/react.svg",
+      description: t("desc_react"),
+    },
+    {
+      name: "Next.js",
+      iconSrcLight: "/utils/icons/next_black.svg",
+      iconSrcDark: "/utils/icons/next_white.svg",
+      description: t("desc_frontend"),
+    },
+    {
+      name: "TypeScript",
+      iconSrcLight: "/utils/icons/typescript.svg",
+      iconSrcDark: "/utils/icons/typescript.svg",
+      description: t("desc_typing"),
+    },
+    {
+      name: "Tailwind",
+      iconSrcLight: "/utils/icons/tailwind.svg",
+      iconSrcDark: "/utils/icons/tailwind.svg",
+      description: t("desc_css"),
+    },
+    {
+      name: "NestJS",
+      iconSrcLight: "/utils/icons/nest.svg",
+      iconSrcDark: "/utils/icons/nest.svg",
+      description: t("desc_nestjs"),
+    },
+    {
+      name: "Prisma",
+      iconSrcLight: "/utils/icons/prisma_black.svg",
+      iconSrcDark: "/utils/icons/prisma_white.svg",
+      description: t("desc_prisma"),
+    },
+    {
+      name: "Figma",
+      iconSrcLight: "/utils/icons/figma.svg",
+      iconSrcDark: "/utils/icons/figma.svg",
+      description: t("desc_design"),
+    },
     {
       name: "UI/UX Design",
-      iconName: "UserFocus",
+      iconSrcLight: "/utils/icons/uxui_black.svg",
+      iconSrcDark: "/utils/icons/uxui_white.svg",
       description: t("desc_ux_ui"),
     },
   ];
