@@ -199,6 +199,8 @@
     "tag": "Atividade",
     "title_top": "Atividade no",
     "title_bottom": "GitHub.",
-    "subtitle": "Estatísticas em tempo real geradas dinamicamente a partir dos meus repositórios públicos, commits e linguagens mais utilizadas."
+    "subtitle": "Estatísticas em tempo real geradas dinamicamente a partir dos meus repositórios públicos, commits e linguagens mais utilizadas.",
+    "no_activity": "Sem atividades públicas",
+    "no_activity_desc": "Nenhum commit público recente encontrado."
   }
 }

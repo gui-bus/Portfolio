@@ -1,6 +1,3 @@
-import { getLocale, getTranslations } from "next-intl/server";
-import { SectionAnimationWrapper } from "@/components/common/sectionAnimationWrapper";
-import Image from "next/image";
 import {
   CodeIcon,
   CalendarIcon,
@@ -10,6 +7,10 @@ import {
   BookOpenIcon,
   StarIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import { getTranslations } from "next-intl/server";
+import { getLocale } from "next-intl/server";
+import { SectionAnimationWrapper } from "@/components/common/sectionAnimationWrapper";
+import Image from "next/image";
 
 interface GitHubUser {
   avatar_url: string;
@@ -41,39 +42,61 @@ const fallbackStats = {
   avatarUrl: "https://avatars.githubusercontent.com/u/81804245?v=4",
   name: "Guilherme Bustamante",
   login: "gui-bus",
-  bio: "Desenvolvedor Full Stack com foco em React, Next.js e TypeScript.",
-  followers: 16,
-  publicRepos: 42,
-  totalStars: 28,
+  bio: "Desenvolvedor Full Stack // Especialista em React, Next.js e TypeScript.",
+  followers: 24,
+  publicRepos: 11,
+  totalStars: 16,
   topLanguages: [
-    { name: "TypeScript", count: 24, percent: 55, color: "bg-blue-500" },
-    { name: "JavaScript", count: 12, percent: 27, color: "bg-yellow-500" },
-    { name: "HTML / CSS", count: 4, percent: 10, color: "bg-orange-500" },
-    { name: "Shell / Config", count: 2, percent: 8, color: "bg-emerald-500" },
-  ]
+    { name: "TypeScript", count: 8, percent: 62, color: "bg-blue-500" },
+    { name: "JavaScript", count: 3, percent: 23, color: "bg-yellow-500" },
+    { name: "HTML / CSS", count: 1, percent: 8, color: "bg-orange-500" },
+    { name: "Shell / Config", count: 1, percent: 7, color: "bg-emerald-500" },
+  ],
 };
+
+async function getRecentCommits() {
+  try {
+    const eventsRes = await fetch("https://api.github.com/users/gui-bus/events/public", {
+      cache: "no-store",
+    });
+    if (!eventsRes.ok) return [];
+
+    const events: GitHubEvent[] = await eventsRes.json();
+    const pushEvents = events.filter(
+      (e) => e.type === "PushEvent" && e.payload.commits && e.payload.commits.length > 0
+    );
+
+    if (pushEvents.length > 0) {
+      return pushEvents.slice(0, 3).map((e) => ({
+        repo: e.repo.name.replace("gui-bus/", ""),
+        message: e.payload.commits![0].message,
+        date: e.created_at,
+      }));
+    }
+  } catch (err) {
+    console.error("Error fetching recent commits:", err);
+  }
+  return [];
+}
 
 async function getGitHubStats() {
   try {
-    const userRes = await fetch("https://api.github.com/users/gui-bus", {
-      next: { revalidate: 3600 }
-    });
-    
-    const reposRes = await fetch("https://api.github.com/users/gui-bus/repos?per_page=100", {
-      next: { revalidate: 3600 }
-    });
+    const [userRes, reposRes] = await Promise.all([
+      fetch("https://api.github.com/users/gui-bus", { next: { revalidate: 3600 } }),
+      fetch("https://api.github.com/users/gui-bus/repos?per_page=100", { next: { revalidate: 3600 } }),
+    ]);
 
     if (!userRes.ok || !reposRes.ok) {
-      return { ...fallbackStats, recentCommits: getDefaultCommits() };
+      return { ...fallbackStats, recentCommits: await getRecentCommits() };
     }
 
     const user: GitHubUser = await userRes.json();
     const repos: GitHubRepo[] = await reposRes.json();
-    
+
     let totalStars = 0;
     const languagesMap: Record<string, number> = {};
-    
-    repos.forEach(repo => {
+
+    repos.forEach((repo) => {
       totalStars += repo.stargazers_count;
       if (repo.language) {
         languagesMap[repo.language] = (languagesMap[repo.language] || 0) + 1;
@@ -81,7 +104,7 @@ async function getGitHubStats() {
     });
 
     const totalLangsCount = Object.values(languagesMap).reduce((a, b) => a + b, 0) || 1;
-    
+
     const colorMap: Record<string, string> = {
       TypeScript: "bg-blue-500",
       JavaScript: "bg-yellow-500",
@@ -97,13 +120,13 @@ async function getGitHubStats() {
         name,
         count,
         percent: Math.round((count / totalLangsCount) * 100),
-        color: colorMap[name] || "bg-zinc-500"
+        color: colorMap[name] || "bg-zinc-500",
       }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 4);
 
     const recentCommits = await getRecentCommits();
-      
+
     return {
       avatarUrl: user.avatar_url || fallbackStats.avatarUrl,
       name: user.name || fallbackStats.name,
@@ -113,43 +136,12 @@ async function getGitHubStats() {
       publicRepos: user.public_repos || repos.length || fallbackStats.publicRepos,
       totalStars: totalStars || fallbackStats.totalStars,
       topLanguages: topLanguages.length ? topLanguages : fallbackStats.topLanguages,
-      recentCommits
+      recentCommits,
     };
   } catch (error) {
-    console.error("Error fetching GitHub stats, using fallback:", error);
-    return { ...fallbackStats, recentCommits: getDefaultCommits() };
+    console.error("Error fetching GitHub stats:", error);
+    return { ...fallbackStats, recentCommits: await getRecentCommits() };
   }
-}
-
-function getDefaultCommits() {
-  return [
-    { repo: "Portfolio", message: "feat: standardise section entrance animations", date: new Date().toISOString() },
-    { repo: "Portfolio", message: "feat: clean obsolete translation keys", date: new Date(Date.now() - 3600000).toISOString() },
-    { repo: "lume", message: "refactor: optimize PDF export layout", date: new Date(Date.now() - 86400000).toISOString() }
-  ];
-}
-
-async function getRecentCommits() {
-  try {
-    const eventsRes = await fetch("https://api.github.com/users/gui-bus/events/public", {
-      next: { revalidate: 600 }
-    });
-    if (!eventsRes.ok) return getDefaultCommits();
-
-    const events: GitHubEvent[] = await eventsRes.json();
-    const pushEvents = events.filter(e => e.type === "PushEvent" && e.payload.commits && e.payload.commits.length > 0);
-    
-    if (pushEvents.length > 0) {
-      return pushEvents.slice(0, 3).map(e => ({
-        repo: e.repo.name.replace("gui-bus/", ""),
-        message: e.payload.commits![0].message,
-        date: e.created_at
-      }));
-    }
-  } catch (err) {
-    console.error("Error fetching events:", err);
-  }
-  return getDefaultCommits();
 }
 
 export async function GithubStatsSection() {
@@ -161,7 +153,7 @@ export async function GithubStatsSection() {
     const date = new Date(dateStr);
     return date.toLocaleDateString(locale, {
       day: "2-digit",
-      month: "short"
+      month: "short",
     });
   };
 
@@ -196,7 +188,7 @@ export async function GithubStatsSection() {
 
         <div className="space-y-8">
           <SectionAnimationWrapper className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            <div className="lg:col-span-4 p-8 border border-border dark:border-white/5 bg-muted/5 flex flex-col justify-between hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300 relative group">
+            <div className="lg:col-span-4 p-8 border border-border dark:border-white/5 bg-muted/5 flex flex-col justify-between hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex flex-col items-center text-center mt-2">
                 <div className="relative w-20 h-20 rounded-full overflow-hidden border border-border dark:border-white/10 mb-4">
                   <Image
@@ -276,7 +268,6 @@ export async function GithubStatsSection() {
                   ))}
                 </div>
 
-                {/* Languages List with Color Dots */}
                 <div className="grid grid-cols-2 gap-x-6 gap-y-5">
                   {stats.topLanguages.map((lang) => (
                     <div key={lang.name} className="flex items-center gap-3">
@@ -304,30 +295,41 @@ export async function GithubStatsSection() {
               </div>
 
               <div className="space-y-5 flex-1 flex flex-col justify-center">
-                {stats.recentCommits.map((commit, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col gap-1.5 pb-4 border-b border-border dark:border-white/5 last:border-0 last:pb-0"
-                  >
-                    <div className="flex items-center justify-between">
-                      <a
-                        href={`https://github.com/gui-bus/${commit.repo}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-[10px] font-mono font-bold text-yellow-600 dark:text-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-400 uppercase tracking-wider flex items-center gap-1 transition-colors"
-                      >
-                        {commit.repo}
-                        <ArrowSquareOutIcon size={10} weight="bold" />
-                      </a>
-                      <span className="text-[9px] font-mono text-muted-foreground/60">
-                        {formatDate(commit.date)}
-                      </span>
+                {stats.recentCommits && stats.recentCommits.length > 0 ? (
+                  stats.recentCommits.map((commit, idx) => (
+                    <div
+                      key={idx}
+                      className="flex flex-col gap-1.5 pb-4 border-b border-border dark:border-white/5 last:border-0 last:pb-0"
+                    >
+                      <div className="flex items-center justify-between">
+                        <a
+                          href={`https://github.com/gui-bus/${commit.repo}`}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-[10px] font-mono font-bold text-yellow-600 dark:text-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-400 uppercase tracking-wider flex items-center gap-1 transition-colors"
+                        >
+                          {commit.repo}
+                          <ArrowSquareOutIcon size={10} weight="bold" />
+                        </a>
+                        <span className="text-[9px] font-mono text-muted-foreground/60">
+                          {formatDate(commit.date)}
+                        </span>
+                      </div>
+                      <p className="text-xs text-foreground font-light line-clamp-1">
+                        {commit.message}
+                      </p>
                     </div>
-                    <p className="text-xs text-foreground font-light line-clamp-1">
-                      {commit.message}
-                    </p>
+                  ))
+                ) : (
+                  <div className="text-center py-6">
+                    <span className="text-xs font-mono text-muted-foreground/60 block mb-2">
+                      {t("no_activity")}
+                    </span>
+                    <span className="text-[10px] font-light text-muted-foreground/45 leading-normal block">
+                      {t("no_activity_desc")}
+                    </span>
                   </div>
-                ))}
+                )}
               </div>
             </div>
           </SectionAnimationWrapper>
@@ -341,21 +343,13 @@ export async function GithubStatsSection() {
             </div>
 
             <div className="w-full overflow-x-auto py-2 scrollbar-thin">
-              <div className="min-w-[1100px] flex justify-center py-4 bg-transparent dark:bg-transparent rounded">
+              <div className="min-w-[1100px] flex justify-center py-4">
                 <Image
                   src="https://ghchart.rshah.org/216e39/gui-bus"
                   alt="gui-bus GitHub Contributions Graph"
                   width={1100}
                   height={165}
-                  className="hidden dark:block select-none object-contain w-full"
-                  unoptimized
-                />
-                <Image
-                  src="https://ghchart.rshah.org/216e39/gui-bus"
-                  alt="gui-bus GitHub Contributions Graph"
-                  width={1100}
-                  height={165}
-                  className="block dark:hidden select-none duration-300 object-contain w-full"
+                  className="select-none opacity-85 hover:opacity-100 transition-opacity duration-300 object-contain w-full"
                   unoptimized
                 />
               </div>

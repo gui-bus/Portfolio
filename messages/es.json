@@ -199,6 +199,8 @@
     "tag": "Actividad",
     "title_top": "Actividad en",
     "title_bottom": "GitHub.",
-    "subtitle": "Estadísticas en tiempo real generadas dinámicamente a partir de mis repositorios públicos, confirmaciones y lenguajes más utilizados."
+    "subtitle": "Estadísticas en tiempo real generadas dinámicamente a partir de mis repositorios públicos, confirmaciones y lenguajes más utilizados.",
+    "no_activity": "Sin actividad pública",
+    "no_activity_desc": "No se encontraron confirmaciones públicas recientes."
   }
 }
