@@ -18,7 +18,7 @@ export async function generateMetadata() {
   const t = await getTranslations('Metadata');
   const locale = await getLocale();
   const baseUrl = 'https://guibus.dev';
-  const ogImage = "/images/profile.jpg";
+  const ogImage = "/utils/seo/og-image.png";
  
   return {
     metadataBase: new URL(baseUrl),
