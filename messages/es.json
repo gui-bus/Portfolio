@@ -19,68 +19,6 @@
     "tech_stack_label": "Tech Stack",
     "presence_label": "Presencia Digital"
   },
-  "Methodology": {
-    "tag": "Metodología",
-    "title_top": "Donde la lógica",
-    "title_outline": "se encuentra con el",
-    "title_bottom": "sentimiento.",
-    "subtitle": "Mi filosofía de trabajo se basa en la reducción de fricción. Menos ruido visual, más velocidad de ejecución.",
-    "step1_tag": "Motor",
-    "step1_title": "Arquitectura de Rendimiento",
-    "step1_desc": "No solo código, sino sistemas optimizados. Enfoque total en Core Web Vitals y renderizado eficiente con Next.js.",
-    "step2_tag": "Estética",
-    "step2_title": "Diseño de Interfaz",
-    "step2_desc": "Interfaces que respiran. Utilizo Figma y Tailwind para crear sistemas de diseño consistentes y visualmente impactantes.",
-    "step3_tag": "Estructura",
-    "step3_title": "Escalabilidad Real",
-    "step3_desc": "Código limpio y tipado con TypeScript. Preparado para crecer sin generar deuda técnica acumulada.",
-    "footer_text": "// Enfocado en entregar resultados, no solo archivos.",
-    "label_performance": "Rendimiento",
-    "label_experience": "Experiencia",
-    "label_scalability": "Escalabilidad"
-  },
-  "Workflow": {
-    "tag": "Flujo de trabajo",
-    "title_top": "Del concepto",
-    "title_bottom": "al despliegue.",
-    "card_label": "ETAPA_PROCESO_",
-    "step1_title": "Descubrimiento",
-    "step1_desc": "Análisis profundo del problema, definición de objetivos y mapeo de requisitos técnicos.",
-    "step2_title": "Diseño y UX",
-    "step2_desc": "Creación de interfaces intuitivas y prototipado de alta fidelidad enfocado en la conversión.",
-    "step3_title": "Desarrollo",
-    "step3_desc": "Transformación del diseño en código limpio, performante y escalable usando React/Next.js.",
-    "step4_title": "Despliegue",
-    "step4_desc": "Optimización final, pruebas rigurosas y lanzamiento en infraestructura Edge.",
-    "status_active": "Sistema Activo",
-    "status_agile": "Framework Ágil",
-    "footer_text": "// Optimizado para un crecimiento escalable"
-  },
-  "Services": {
-    "tag": "Experiencia y Servicios",
-    "title_top": "Soluciones",
-    "title_bottom": "A Medida.",
-    "main_card_title": "Desarrollo Full-stack",
-    "main_card_tag": "Sistema Full-Stack",
-    "main_card_desc": "Creación de aplicaciones web completas, desde el diseño hasta la API. Utilizo el ecosistema React para ofrecer interfaces rápidas, seguras y listas para escalar.",
-    "main_card_cta": "Solicitar Propuesta",
-    "cta_initialize": "Iniciar Proyecto",
-    "step1_tag": "Core Vitals",
-    "step1_title": "Optimización de Rendimiento",
-    "step1_desc": "Refactorización de código y estrategias de caché para aplicaciones que cargan al instante.",
-    "step2_tag": "Back-end",
-    "step2_title": "Sistemas Escalables",
-    "step2_desc": "Arquitecturas robustas usando Node.js e integración con bases de datos relacionales.",
-    "step3_tag": "Diseño",
-    "step3_title": "UI/UX de Alta Fidelidad",
-    "step3_desc": "Prototipado e implementación de diseños modernos enfocados en la usabilidad y la estética.",
-    "step4_tag": "Calidad",
-    "step4_title": "Seguridad y SEO",
-    "step4_desc": "Mejores prácticas de seguridad y optimización para motores de búsqueda desde el primer día.",
-    "step5_tag": "Frontend",
-    "step5_title": "Desarrollo Frontend",
-    "step5_desc": "Creación de interfaces receptivas, accesibles y centradas en el usuario utilizando las tecnologías más modernas del mercado."
-  },
   "TechStack": {
     "tag": "Tech Stack",
     "title_top": "Herramientas",
@@ -96,7 +34,9 @@
     "desc_cloud": "Despliegue y Edge",
     "desc_mobile": "Desarrollo Móvil",
     "desc_nestjs": "Arquitectura Backend",
-    "desc_prisma": "Modelado de Datos y ORM"
+    "desc_prisma": "Modelado de Datos y ORM",
+    "desc_backend": "Backend Escalável",
+    "desc_ux_ui": "UX/UI Design"
   },
   "ProjectsSection": {
     "tag": "Proyectos Seleccionados",
@@ -111,161 +51,24 @@
     "github_hint": "Para detalles de arquitectura, decisiones técnicas y el historial de desarrollo, acceda al repositorio de GitHub.",
     "explore_all_github": "¿Quieres ver todos los proyectos? Accede a mi perfil en GitHub"
   },
-  "Contact": {
-    "status": "Disponible para trabajar",
-    "title_top": "Construyamos",
-    "title_bottom": "el futuro.",
-    "cta_start": "Iniciar un Proyecto",
-    "description": "Siempre estoy abierto a nuevas oportunidades y asociaciones estratégicas. Inicia el protocolo para construir algo memorable.",
-    "location": "Sede en Brasil // Remoto a nivel mundial",
-    "cv": "Currículo",
-    "referral_badge": "Protocolo de Descuento Activado",
-    "referral_text": "Has recibido un 10% de descuento vía recomendación de {name}",
-    "form_tag": "// Formulario de Consulta",
-    "form_title_top": "Inicia el",
-    "form_title_bottom": "Protocolo.",
-    "success_title": "Consulta Recibida.",
-    "success_message": "Protocolo establecido. Revisaré sus requisitos y responderé en un plazo de 24 horas.",
-    "label_name": "01. Nombre",
-    "placeholder_name": "Su nombre o empresa",
-    "label_email": "02. Correo electrónico",
-    "placeholder_email": "correo@ejemplo.com",
-    "label_project": "03. Tipo de Proyecto",
-    "type_fullstack": "Full-stack",
-    "type_design": "Diseño UI/UX",
-    "type_consulting": "Consultoría",
-    "type_other": "Otro",
-    "label_company": "04. Empresa (Opcional)",
-    "placeholder_company": "Nombre de su empresa",
-    "label_budget": "05. Presupuesto Estimado",
-    "label_deadline": "06. Plazo Deseado",
-    "label_briefing": "07. Resumen del Proyecto",
-    "placeholder_briefing": "Describa su desafío, objetivos y referencias...",
-    "budget_range_1": "Hasta $5k",
-    "budget_range_2": "$5k - $15k",
-    "budget_range_3": "$15k - $50k",
-    "budget_range_4": "$50k+",
-    "deadline_1": "Extremadamente Urgente",
-    "deadline_2": "1-2 meses",
-    "deadline_3": "3-6 meses",
-    "deadline_4": "Sin prisa",
-    "validation_required": "Este campo es obligatorio",
-    "validation_email": "Correo electrónico no válido",
-    "validation_min_length": "Mínimo {min} caracteres",
-    "btn_sending": "Enviando Protocolo...",
-    "btn_send": "Enviar Mensaje"
-  },
   "Projects": {
-    "power-fit": {
-      "title": "POWER.FIT",
-      "category": "Plataforma Full-stack",
-      "description": "La próxima generación de gestión de fitness: IA generativa, gamificación y arquitectura de alto rendimiento.",
-      "challenge": "POWER.FIT fue desarrollado para resolver la fragmentación entre el registro de entrenamientos, el seguimiento nutricional y la motivación social, utilizando lo último en el ecosistema TypeScript.",
-      "solution": "Arquitectamos una SPA con rendimiento SSR, IA nativa integrada a través de Vercel AI SDK para la generación de entrenamientos y una arquitectura impulsada por contratos para cero errores de integración.",
+    "atlas": {
+      "title": "Atlas HRMS",
+      "category": "Ecosistema ERP y de Reclutamiento (ATS)",
+      "description": "Atlas HRMS es un sistema integrado de gestión de recursos humanos desarrollado en una arquitectura monorepo con Next.js, NestJS, Prisma y PostgreSQL. El proyecto reúne en un solo panel módulos para control de empleados, puestos, vacaciones, registro de tiempo digital, banco de horas flexible, procesos de selección (ATS), control de accesos y tableros con indicadores de gestión.",
+      "challenge": "Consolidar múltiples módulos empresariales en una arquitectura unificada y tipada de extremo a extremo.",
+      "solution": "Desarrollado con NestJS, Next.js, Prisma y PostgreSQL en un monorepo gestionado por Turborepo y Docker.",
       "results": [
-        "Generación automática de entrenamientos mediante lenguaje natural",
-        "Arquitectura 100% Type-Safe con sincronización Swagger/Orval",
-        "Visualización de consistencia inspirada en la cuadrícula de GitHub",
-        "Pipeline de logros y XP asíncrono para la retención"
+        "Tipado compartido de forma nativa entre cliente y servidor",
+        "Registro de asistencia y cálculo de banco de horas en tiempo real",
+        "Tablero Kanban interactivo para el pipeline de reclutamiento",
+        "Seguridad híbrida con cookies Http-Only y control RBAC en el backend"
       ],
       "tags": [
-        "Full-stack",
-        "AI",
-        "Fitness",
-        "Gamificación"
-      ]
-    },
-    "powervet": {
-      "title": "PowerVet",
-      "category": "Medicina Veterinaria",
-      "description": "Atención veterinaria experta para gatos, que combina un tratamiento médico avanzado con una atención personalizada para el bienestar felino.",
-      "challenge": "Crear una presencia digital que refleje la especialización técnica y la confianza en el nicho de la salud felina, enfocándose en el bienestar a largo plazo.",
-      "solution": "Una landing page de alta conversión enfocada en la accesibilidad y patrones modernos de React para una experiencia de usuario fluida.",
-      "results": [
-        "Posicionamiento de marca premium en el sector veterinario",
-        "Interfaz receptiva optimizada para reservas rápidas",
-        "Módulos educativos integrados sobre cuidado preventivo",
-        "Rendimiento técnico excepcional para el SEO orgánico"
-      ],
-      "tags": [
-        "Salud",
-        "Especialista Felino",
-        "Responsivo"
-      ]
-    },
-    "horizon-travels": {
-      "title": "Horizon Travels",
-      "category": "Agencia de Viajes",
-      "description": "Viajes inmersivos que conectan a los viajeros con experiencias auténticas y una planificación global fluida.",
-      "challenge": "La industria de viajes requiere una narración visual de alto impacto para convertir el interés en reservas en un entorno altamente competitivo.",
-      "solution": "Una plataforma rica en medios con animaciones de desplazamiento inmersivas y una UX curada que guía al usuario a través de destinos globales.",
-      "results": [
-        "Aumento del 120% en el compromiso a través de la narración inmersiva",
-        "Flujo de planificación simplificado con tarjetas interactivas",
-        "Estrategia de carga de imágenes optimizada para alta resolución",
-        "Diseño pensado primero para móviles para viajeros en movimiento"
-      ],
-      "tags": [
-        "Viajes",
-        "Narración Visual",
-        "UX/UI"
-      ]
-    },
-    "voltage-festival": {
-      "title": "Voltage Festival",
-      "category": "Evento Musical",
-      "description": "Una experiencia inmersiva de música electrónica en interiores con DJs de clase mundial y energía sin parar.",
-      "challenge": "Capturar la energía vibrante y el pulso de una rave techno en un entorno web estático manteniendo el rendimiento.",
-      "solution": "Una interfaz oscura de alta intensidad con acentos de neón y elementos visuales dinámicos que reaccionan al ritmo de la música electrónica.",
-      "results": [
-        "Exploración interactiva del cartel con el estado de los DJs en tiempo real",
-        "Sistema de diseño de neón con optimización de color OKLCH",
-        "Flujo de integración de entradas de alto rendimiento",
-        "Página de aterrizaje viral con funciones para compartir en redes sociales"
-      ],
-      "tags": [
-        "Música",
-        "Evento",
-        "Interactivo",
-        "Diseño Neón"
-      ]
-    },
-    "haven-barbershop": {
-      "title": "Haven Barbershop",
-      "category": "Grooming Premium",
-      "description": "Experiencia de barbería premium con cortes de precisión, técnicas clásicas y un estilo ritual moderno.",
-      "challenge": "Transformar un servicio estándar en un ritual de lujo a través de una experiencia digital que emana artesanía.",
-      "solution": "Paleta de colores basada en Zinc con tipografía de alto contraste y enfoque en el diseño arquitectónico y fotografía de calidad.",
-      "results": [
-        "Elevación de la percepción de la marca como una experiencia ritual",
-        "Sistema de reservas integrado con flujo intuitivo",
-        "Galería de rituales optimizada para dispositivos móviles",
-        "Estrategia de SEO enfocada en palabras clave de lujo locales"
-      ],
-      "tags": [
-        "Estilo de vida",
-        "Branding",
-        "E-commerce",
-        "Negocio Local"
-      ]
-    },
-    "starkfit": {
-      "title": "StarkFit",
-      "category": "Premium Fitness & Elite Performance",
-      "description": "Ecosistema digital para un club de rendimiento de élite, enfocado en transformar el esfuerzo bruto en legado a través de tecnología avanzada e infraestructura de lujo.",
-      "challenge": "Diseñar una interfaz que transmita agresividad técnica y exclusividad inquebrantable, equilibrando una estética brutalista con la sofisticación de una marca de alta gama.",
-      "solution": "Uso de Next.js y Framer Motion para crear una narrativa visual inmersiva, con tipografía de alto impacto, una paleta 'Dark Mode' de alto contraste y una arquitectura de información enfocada en la conversión premium.",
-      "results": [
-        "Identidad visual que respira fuerza, precisión y cultura de élite",
-        "Experiencia de navegación fluida con animaciones que refuerzan la dinámica del entrenamiento",
-        "Sistema de internacionalización (i18n) robusto para escalar en mercados globales",
-        "Interfaz optimizada para la conversión de planes de membresía de alto valor"
-      ],
-      "tags": [
-        "Fitness Luxury",
-        "Elite Performance",
-        "Brutalista Design",
-        "Next.js i18n"
+        "Monorepo",
+        "NestJS",
+        "PostgreSQL",
+        "Corporate App"
       ]
     },
     "lume": {
@@ -287,44 +90,6 @@
         "Next.js & Prisma"
       ]
     },
-    "thais": {
-      "title": "Thaís Crisley - Aparece y Vende",
-      "category": "Infraestructura de Conversión y Marketing de Alto Rendimiento",
-      "description": "Infraestructura de alto rendimiento para landing pages de conversión, diseñada para eliminar la latencia entre el clic del anuncio y la experiencia de venta, utilizando el estado del arte del ecosistema React.",
-      "challenge": "Desarrollar una base técnica que soporte tráfico masivo con carga instantánea, manteniendo una interfaz premium, accesible (nivel AA) y con soporte para múltiples idiomas.",
-      "solution": "Motor modular basado en Next.js 16 y Tailwind v4, priorizando Server Components para un rendimiento extremo, i18n tipado sin prefijos de URL y un flujo de trabajo industrial de scaffolding vía Plop.js.",
-      "results": [
-        "Experiencia de navegación 'Instant-Load' con enfoque total en Core Web Vitals y renderizado del lado del servidor",
-        "Interfaz minimalista y receptiva con microinteracciones fluidas a través de Framer Motion e iconos Phosphor",
-        "Flujo de trabajo de desarrollo acelerado con generación automatizada de componentes y sincronización de i18n",
-        "Pipeline de calidad industrial con pruebas de regresión (Vitest/Playwright) y auditoría de seguridad continua"
-      ],
-      "tags": [
-        "Performance Engineering",
-        "Conversion Optimization",
-        "Next.js 16 & React 19",
-        "Industrial Architecture"
-      ]
-    },
-    "atlas": {
-      "title": "Atlas HRMS",
-      "category": "Ecosistema ERP y de Reclutamiento (ATS)",
-      "description": "Atlas HRMS es un sistema integrado de gestión de recursos humanos desarrollado en una arquitectura monorepo con Next.js, NestJS, Prisma y PostgreSQL. El proyecto reúne en un solo panel módulos para control de empleados, puestos, vacaciones, registro de tiempo digital, banco de horas flexible, procesos de selección (ATS), control de accesos y tableros con indicadores de gestión.",
-      "challenge": "Consolidar múltiples módulos empresariales en una arquitectura unificada y tipada de extremo a extremo.",
-      "solution": "Desarrollado con NestJS, Next.js, Prisma y PostgreSQL en un monorepo gestionado por Turborepo y Docker.",
-      "results": [
-        "Tipado compartido de forma nativa entre cliente y servidor",
-        "Registro de asistencia y cálculo de banco de horas en tiempo real",
-        "Tablero Kanban interactivo para el pipeline de reclutamiento",
-        "Seguridad híbrida con cookies Http-Only y control RBAC en el backend"
-      ],
-      "tags": [
-        "Monorepo",
-        "NestJS",
-        "PostgreSQL",
-        "Corporate App"
-      ]
-    },
     "bloom": {
       "title": "Bloom",
       "category": "Design System y Biblioteca de Componentes",
@@ -342,6 +107,32 @@
         "Tailwind v4",
         "React 19",
         "CLI Tool"
+      ]
+    },
+    "powerfit": {
+      "title": "POWER.FIT",
+      "category": "Plataforma Full Stack",
+      "description": "POWER.FIT es una plataforma full stack de gestión de entrenamiento desarrollada con Next.js, Fastify, TypeScript y PostgreSQL. El sistema ayuda en la planificación de ejercicios y seguimiento de rutinas físicas. La aplicación utiliza SSR con gestión eficiente del estado en el frontend, mientras que la API del backend implementa autenticación segura, validaciones con Zod y persistencia mediante Prisma ORM.",
+      "cta_frontend": "Repositorio FRONTEND",
+      "cta_backend": "Repositorio BACKEND"
+    },
+    "magui": {
+      "title": "MAGUI.studio",
+      "category": "High-End Visual Strategy & Professional Interface Engineering",
+      "description": "Uma coleção de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
+      "challenge": "Construir um template universal de altíssimo nível que unifique o rigor da engenharia (Next.js 16/React 19) com a sofisticação visual do design de autoridade, garantindo 100/100 em todos os Core Web Vitals.",
+      "solution": "Arquitetura baseada em Next.js App Router, Tailwind CSS v4 e i18n prefix-less, incorporando um workflow industrial com geradores Plop.js, testes unitários/E2E e auditoria automatizada de segurança e performance.",
+      "results": [
+        "Carregamento ultra-rápido via Server Components e otimização nativa de assets",
+        "Interface de autoridade com tipografia Luxury e micro-interações fluidas via Framer Motion",
+        "Sincronização automatizada de traduções e tipagem estrita para escala global",
+        "Pipeline de CI/CD robusto com validação obrigatória de build, lint e segurança"
+      ],
+      "tags": [
+        "Interface Engineering",
+        "Visual Strategy",
+        "Next.js 16 & React 19",
+        "Authority Design"
       ]
     },
     "techicons": {
@@ -362,13 +153,6 @@
         "Branding",
         "Assets Catalog"
       ]
-    },
-    "powerfit": {
-      "title": "POWER.FIT",
-      "category": "Plataforma Full Stack",
-      "description": "POWER.FIT es una plataforma full stack de gestión de entrenamiento desarrollada con Next.js, Fastify, TypeScript y PostgreSQL. El sistema ayuda en la planificación de ejercicios y seguimiento de rutinas físicas. La aplicación utiliza SSR con gestión eficiente del estado en el frontend, mientras que la API del backend implementa autenticación segura, validaciones con Zod y persistencia mediante Prisma ORM.",
-      "cta_frontend": "Repositorio FRONTEND",
-      "cta_backend": "Repositorio BACKEND"
     }
   },
   "Footer": {

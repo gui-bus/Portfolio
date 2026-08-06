@@ -88,7 +88,7 @@ export function Header() {
       observerCallback,
       observerOptions,
     );
-    const sections = ["methodology", "services", "projects", "contact"];
+    const sections = ["about-me", "projects", "tech-stack"];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);

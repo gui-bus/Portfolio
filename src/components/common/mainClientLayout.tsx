@@ -14,7 +14,7 @@ export function MainClientLayout({ children }: MainClientLayoutProps) {
       <Header />
       <main className="relative">{children}</main>
 
-      {/* Floating WhatsApp Widget */}
+      
       <div className="fixed bottom-8 left-0 right-0 z-50 pointer-events-none flex justify-center px-6">
         <div className="w-full max-w-[110rem] flex justify-end">
           <a
