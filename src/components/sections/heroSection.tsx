@@ -1,8 +1,7 @@
 import {
-  FingerprintIcon,
   CpuIcon,
   ArrowRightIcon,
-  FileTextIcon,
+  PaintBrushIcon
 } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations } from "next-intl/server";
 import {
@@ -13,6 +12,7 @@ import {
 } from "./heroSectionClient";
 import { ThemeToggle } from "@/components/common/themeToggle";
 import { LanguageSwitcher } from "@/components/common/languageSwitcher";
+import { ScrollArrowClient } from "./heroScrollArrowClient";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -61,7 +61,6 @@ export async function HeroSection() {
 
             <HeroDescriptionAnimation>
               <div className="flex flex-col items-center gap-12 w-full">
-                {/* Cinematic Info Cards */}
                 <div className="flex flex-wrap justify-center gap-4">
                   <div className="flex items-center gap-4 px-6 py-4 cinematic-card group hover:border-yellow-600/40 transition-all duration-500 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-0.5 bg-yellow-600/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
@@ -77,9 +76,29 @@ export async function HeroSection() {
                     </div>
                   </div>
 
+                  <Link
+                    href="https://lume.guibus.dev/pt/share/guilherme-bustamante"
+                    target="_blank"
+                    className="flex items-center gap-4 px-6 py-4 cinematic-card group hover:border-yellow-600/40 transition-all duration-500 relative overflow-hidden"
+                  >
+                    <div className="absolute top-0 left-0 w-full h-0.5 bg-yellow-600/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
+                    <Image
+                      src="/utils/icons/lume_icon.png"
+                      alt="Lume"
+                      width={24}
+                      height={24}
+                      className="object-contain group-hover:scale-110 transition-transform duration-500 rounded-sm"
+                    />
+                    <div className="flex flex-col text-left">
+                      <span className="text-[11px] font-mono uppercase tracking-widest font-black">
+                        {t("cv_cta")}
+                      </span>
+                    </div>
+                  </Link>
+
                   <div className="flex items-center gap-4 px-6 py-4 cinematic-card group hover:border-yellow-600/40 transition-all duration-500 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-0.5 bg-yellow-600/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
-                    <FingerprintIcon
+                    <PaintBrushIcon
                       size={24}
                       weight="thin"
                       className="text-yellow-600 dark:text-yellow-500 group-hover:scale-110 transition-transform duration-500"
@@ -90,31 +109,10 @@ export async function HeroSection() {
                       </span>
                     </div>
                   </div>
-
-                  <Link
-                    href="https://lume.guibus.dev/pt/share/guilherme-bustamante"
-                    target="_blank"
-                    className="flex items-center gap-4 px-6 py-4 cinematic-card group hover:border-yellow-600/40 transition-all duration-500 relative overflow-hidden"
-                  >
-                    <div className="absolute top-0 left-0 w-full h-0.5 bg-yellow-600/20 -translate-x-full group-hover:translate-x-0 transition-transform duration-700" />
-                    <FileTextIcon
-                      size={24}
-                      weight="thin"
-                      className="text-yellow-600 dark:text-yellow-500 group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="flex flex-col text-left">
-                      <span className="text-[11px] font-mono uppercase tracking-widest font-black">
-                        {t("cv_cta")}
-                      </span>
-                    </div>
-                  </Link>
                 </div>
 
-                {/* Symmetrical Utility and Actions Bar */}
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-border dark:border-white/5 pt-8 w-full max-w-2xl">
-                  {/* Left Side: Status & Socials */}
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-border dark:border-white/5 pt-8 w-full">
                   <div className="flex items-center gap-6">
-                    {/* Status */}
                     <div className="flex items-center gap-2.5">
                       <div className="relative flex h-2 w-2">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -127,7 +125,6 @@ export async function HeroSection() {
 
                     <div className="w-px h-3 bg-border dark:bg-white/10" />
 
-                    {/* Socials */}
                     <div className="flex items-center gap-4">
                       <Link
                         href="https://github.com/gui-bus"
@@ -167,9 +164,7 @@ export async function HeroSection() {
                     </div>
                   </div>
 
-                  {/* Right Side: Preferences & CTA */}
                   <div className="flex items-center gap-6">
-                    {/* Language & Theme switchers */}
                     <div className="flex items-center gap-4">
                       <LanguageSwitcher />
                       <ThemeToggle />
@@ -177,7 +172,6 @@ export async function HeroSection() {
 
                     <div className="w-px h-3 bg-border dark:bg-white/10" />
 
-                    {/* Explorar Projetos Link */}
                     <Link
                       href={portfolioUrl}
                       className="flex items-center gap-2 group cursor-pointer"
@@ -194,6 +188,9 @@ export async function HeroSection() {
                 </div>
               </div>
             </HeroDescriptionAnimation>
+            <div className="mt-16 flex justify-center">
+              <ScrollArrowClient />
+            </div>
           </div>
         </HeroSectionClient>
       </div>

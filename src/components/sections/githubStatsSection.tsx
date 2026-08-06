@@ -171,7 +171,6 @@ export async function GithubStatsSection() {
       className="relative py-44 bg-background text-foreground overflow-hidden transition-colors duration-500 grid-approach border-b border-border dark:border-white/5"
     >
       <div className="max-w-400 mx-auto px-6 relative z-10 w-full">
-        {/* Section Header */}
         <SectionAnimationWrapper className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-end">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-6">
@@ -195,10 +194,8 @@ export async function GithubStatsSection() {
           </div>
         </SectionAnimationWrapper>
 
-        {/* Stats Grid */}
         <div className="space-y-8">
           <SectionAnimationWrapper className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            {/* Column 1: GitHub Profile Badge */}
             <div className="lg:col-span-4 p-8 border border-border dark:border-white/5 bg-muted/5 flex flex-col justify-between hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300 relative group">
               <div className="flex flex-col items-center text-center mt-2">
                 <div className="relative w-20 h-20 rounded-full overflow-hidden border border-border dark:border-white/10 mb-4">
@@ -221,7 +218,6 @@ export async function GithubStatsSection() {
                 </p>
               </div>
 
-              {/* Profile stats row */}
               <div className="grid grid-cols-3 gap-2 border-t border-b border-border dark:border-white/5 py-4 my-6 text-center">
                 <div>
                   <span className="text-lg font-black text-foreground block">
@@ -249,7 +245,6 @@ export async function GithubStatsSection() {
                 </div>
               </div>
 
-              {/* Follow Button */}
               <a
                 href={`https://github.com/${stats.login}`}
                 target="_blank"
@@ -261,7 +256,6 @@ export async function GithubStatsSection() {
               </a>
             </div>
 
-            {/* Column 2: Top Languages with Horizontal Segment Bar */}
             <div className="lg:col-span-4 p-8 border border-border dark:border-white/5 bg-muted/5 flex flex-col justify-between hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center justify-between mb-8">
                 <span className="text-[9px] font-mono tracking-widest text-muted-foreground uppercase">
@@ -271,7 +265,6 @@ export async function GithubStatsSection() {
               </div>
 
               <div className="flex-1 flex flex-col justify-center">
-                {/* Horizontal Segmented Bar */}
                 <div className="h-3 w-full flex bg-zinc-200 dark:bg-zinc-800 rounded-none overflow-hidden mb-8">
                   {stats.topLanguages.map((lang) => (
                     <div
@@ -302,7 +295,6 @@ export async function GithubStatsSection() {
               </div>
             </div>
 
-            {/* Column 3: Live Activity Feed */}
             <div className="lg:col-span-4 p-8 border border-border dark:border-white/5 bg-muted/5 flex flex-col justify-between hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300">
               <div className="flex items-center justify-between mb-8">
                 <span className="text-[9px] font-mono tracking-widest text-muted-foreground uppercase">
@@ -340,7 +332,6 @@ export async function GithubStatsSection() {
             </div>
           </SectionAnimationWrapper>
 
-          {/* Contributions Calendar Row */}
           <SectionAnimationWrapper className="p-8 border border-border dark:border-white/5 bg-muted/5 hover:border-yellow-600/50 dark:hover:border-yellow-500/50 transition-all duration-300">
             <div className="flex items-center justify-between mb-6">
               <span className="text-[9px] font-mono tracking-widest text-muted-foreground uppercase">
@@ -349,25 +340,22 @@ export async function GithubStatsSection() {
               <CalendarIcon size={18} className="text-yellow-600 dark:text-yellow-500" />
             </div>
 
-            {/* Contribution chart container (scroller for small devices) */}
             <div className="w-full overflow-x-auto py-2 scrollbar-thin">
               <div className="min-w-[1100px] flex justify-center py-4 bg-transparent dark:bg-transparent rounded">
-                {/* Dark mode chart */}
                 <Image
                   src="https://ghchart.rshah.org/216e39/gui-bus"
                   alt="gui-bus GitHub Contributions Graph"
                   width={1100}
                   height={165}
-                  className="hidden dark:block select-none opacity-85 hover:opacity-100 transition-opacity duration-300 object-contain w-full"
+                  className="hidden dark:block select-none object-contain w-full"
                   unoptimized
                 />
-                {/* Light mode chart */}
                 <Image
                   src="https://ghchart.rshah.org/216e39/gui-bus"
                   alt="gui-bus GitHub Contributions Graph"
                   width={1100}
                   height={165}
-                  className="block dark:hidden select-none opacity-85 hover:opacity-100 transition-opacity duration-300 object-contain w-full"
+                  className="block dark:hidden select-none duration-300 object-contain w-full"
                   unoptimized
                 />
               </div>
