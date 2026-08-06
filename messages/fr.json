@@ -194,5 +194,11 @@
     "education_title": "Éducation & Apprentissage",
     "education_description": "Engagé dans une évolution technique continue, je poursuis des spécialisations axées sur le génie logiciel, le design d'interface et les technologies émergentes. Je me consacre au perfectionnement de mes compétences en architecture frontend, aux pratiques modernes du développement full stack et à l'intégration de l'intelligence artificielle et de l'UX dans la création de produits digitaux.",
     "cta": "Explorer les Projets"
+  },
+  "GithubStats": {
+    "tag": "Activité",
+    "title_top": "Activité sur",
+    "title_bottom": "GitHub.",
+    "subtitle": "Statistiques en temps réel générées dynamiquement à partir de mes dépôts publics, commits et langages les plus utilisés."
   }
 }

@@ -194,5 +194,11 @@
     "education_title": "Bildung & Lernen",
     "education_description": "Verpflichtet zu kontinuierlicher technischer Weiterentwicklung absolviere ich Spezialisierungen mit Fokus auf Software-Engineering, Interface-Design und neue Technologien. Ich widme mich der Vertiefung meiner Kenntnisse in Frontend-Architektur, modernen Full-Stack-Praktiken sowie der Integration von künstlicher Intelligenz und UX in digitale Produkte.",
     "cta": "Projekte Erkunden"
+  },
+  "GithubStats": {
+    "tag": "Aktivität",
+    "title_top": "Aktivität auf",
+    "title_bottom": "GitHub.",
+    "subtitle": "Echtzeit-Statistiken, die dynamisch aus meinen öffentlichen Repositories, Commits und meistgenutzten Sprachen generiert werden."
   }
 }

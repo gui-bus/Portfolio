@@ -194,5 +194,11 @@
     "education_title": "Educação & Aprendizado",
     "education_description": "Comprometido com a evolução técnica constante, busco especializações voltadas para engenharia de software, design de interfaces e novas tecnologias. Dedico-me a aprimorar minhas competências em arquitetura frontend, práticas modernas de desenvolvimento full stack e a integração da inteligência artificial e UX no desenvolvimento de produtos digitais.",
     "cta": "Explorar Projetos"
+  },
+  "GithubStats": {
+    "tag": "Atividade",
+    "title_top": "Atividade no",
+    "title_bottom": "GitHub.",
+    "subtitle": "Estatísticas em tempo real geradas dinamicamente a partir dos meus repositórios públicos, commits e linguagens mais utilizadas."
   }
 }

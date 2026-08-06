@@ -194,5 +194,11 @@
     "education_title": "Education & Learning",
     "education_description": "Committed to continuous technical growth, I pursue specializations focused on software engineering, interface design, and emerging technologies. I dedicate myself to refining my skills in frontend architecture, modern full-stack development practices, and the integration of artificial intelligence and UX in digital product design.",
     "cta": "Explore Projects"
+  },
+  "GithubStats": {
+    "tag": "Activity",
+    "title_top": "Activity on",
+    "title_bottom": "GitHub.",
+    "subtitle": "Real-time statistics dynamically generated from my public repositories, commits, and most used languages."
   }
 }

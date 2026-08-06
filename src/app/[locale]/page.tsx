@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/sections/heroSection";
 import { AboutSection } from "@/components/sections/aboutSection";
 import { ProjectsSection } from "@/components/sections/projectsSection";
 import { TechStackSection } from "@/components/sections/techStackSection";
+import { GithubStatsSection } from "@/components/sections/githubStatsSection";
 import { Footer } from "@/components/common/footer";
 
 export default function Portfolio() {
@@ -13,6 +14,7 @@ export default function Portfolio() {
         <AboutSection />
         <ProjectsSection />
         <TechStackSection />
+        <GithubStatsSection />
         <Footer />
       </MainClientLayout>
     </div>
