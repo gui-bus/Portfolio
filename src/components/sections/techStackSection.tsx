@@ -76,7 +76,7 @@ export async function TechStackSection() {
       className="relative py-32 bg-background transition-colors duration-500 overflow-hidden grid-tech"
     >
       <div className="relative z-10 max-w-400 mx-auto px-6">
-        <div className="mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+        <SectionAnimationWrapper className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-24">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-px bg-yellow-600 dark:bg-yellow-500" />
@@ -97,7 +97,7 @@ export async function TechStackSection() {
               {t("subtitle")}
             </p>
           </div>
-        </div>
+        </SectionAnimationWrapper>
 
         <SectionAnimationWrapper className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-border dark:bg-white/5 border border-border dark:border-white/5 mb-24">
           {primaryTech.map((tech, index) => (

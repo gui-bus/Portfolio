@@ -98,7 +98,7 @@ export async function ProjectsSection() {
       className="relative py-44 bg-background text-foreground overflow-hidden transition-colors duration-500 grid-approach border-b border-border dark:border-white/5"
     >
       <div className="max-w-400 mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-end">
+        <SectionAnimationWrapper className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24 items-end">
           <div className="lg:col-span-8">
             <div className="flex items-center gap-3 mb-6">
               <span className="w-8 h-px bg-yellow-600 dark:bg-yellow-500" />
@@ -119,7 +119,7 @@ export async function ProjectsSection() {
               {t("github_hint")}
             </p>
           </div>
-        </div>
+        </SectionAnimationWrapper>
 
         <SectionAnimationWrapper className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
           {projects.map((project, idx) => (
