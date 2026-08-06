@@ -112,7 +112,7 @@ export function Header() {
       >
         <div
           className={cn(
-            "w-full max-w-400 mx-auto flex items-center justify-between transition-all duration-500 px-6 py-3 bg-transparent border-transparent py-5",
+            "w-full max-w-400 mx-auto flex items-center justify-around transition-all duration-500 px-6 bg-transparent border-transparent py-5",
           )}
         >
           <div className="flex items-center gap-12">
@@ -204,9 +204,20 @@ export function Header() {
             transition={{ duration: 0.3, ease: "circOut" }}
             className="fixed inset-0 z-90 bg-background/98 dark:bg-[#050505]/98 backdrop-blur-2xl 2xl:hidden flex flex-col pt-32 px-8"
           >
+            {/* Close Button inside Overlay */}
+            <div className="absolute top-[22px] right-14">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="p-3 bg-muted/30 dark:bg-white/3 border border-border dark:border-white/5 text-foreground cursor-pointer transition-colors hover:border-yellow-600 dark:hover:border-yellow-500"
+                aria-label="Close Menu"
+              >
+                <XIcon size={20} weight="bold" />
+              </button>
+            </div>
+
             <div className="flex flex-col gap-8 mb-12">
               <span className="text-[10px] font-mono tracking-[0.4em] uppercase text-yellow-600 dark:text-yellow-500 font-bold border-b border-border dark:border-white/5 pb-4">
-                Navigation_Menu
+                {t("navigation_menu")}
               </span>
               <div className="flex flex-col gap-6">
                 {navItems.map((item, index) => {
@@ -245,7 +256,7 @@ export function Header() {
             <div className="mt-auto pb-12 flex flex-col gap-8 border-t border-border dark:border-white/5 pt-8">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase">
-                  Social
+                  {t("social")}
                 </span>
                 <div className="flex items-center gap-4">
                   <Link
@@ -288,15 +299,13 @@ export function Header() {
 
               <div className="flex items-center justify-between border-t border-border dark:border-white/5 pt-6">
                 <span className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase">
-                  Preferences
+                  {t("preferences")}
                 </span>
                 <div className="flex items-center gap-4">
                   <LanguageSwitcher />
                   <ThemeToggle />
                 </div>
               </div>
-
-
             </div>
           </motion.div>
         )}

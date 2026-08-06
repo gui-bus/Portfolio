@@ -3,7 +3,10 @@
     "work": "Projetos",
     "about": "Sobre Mim",
     "tech": "Tecnologias",
-    "contact": "Contato"
+    "contact": "Contato",
+    "navigation_menu": "Navegação",
+    "social": "Redes Sociais",
+    "preferences": "Preferências"
   },
   "Hero": {
     "status": "Disponível para novos desafios",

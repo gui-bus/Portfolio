@@ -3,7 +3,10 @@
     "work": "Projects",
     "about": "About Me",
     "tech": "Tech Stack",
-    "contact": "Contact"
+    "contact": "Contact",
+    "navigation_menu": "Navigation",
+    "social": "Social Links",
+    "preferences": "Preferences"
   },
   "Hero": {
     "status": "Available for new challenges",

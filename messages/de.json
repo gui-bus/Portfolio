@@ -3,7 +3,10 @@
     "work": "Projekte",
     "about": "Über mich",
     "tech": "Tech Stack",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "navigation_menu": "Navigation",
+    "social": "Soziale Netzwerke",
+    "preferences": "Einstellungen"
   },
   "Hero": {
     "status": "Verfügbar für neue Herausforderungen",

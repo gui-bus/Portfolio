@@ -3,7 +3,10 @@
     "work": "Projets",
     "about": "À propos",
     "tech": "Technologies",
-    "contact": "Contact"
+    "contact": "Contact",
+    "navigation_menu": "Navigation",
+    "social": "Réseaux Sociaux",
+    "preferences": "Préférences"
   },
   "Hero": {
     "status": "Disponible pour de nouveaux défis",

@@ -79,11 +79,20 @@ export function Footer() {
           </motion.div>
         </motion.div>
 
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-border dark:border-white/5">
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 w-full md:w-auto">
             <p className="text-[10px] font-mono text-muted-foreground uppercase tracking-[0.3em] font-black">
               © {new Date().getFullYear()} GUIBUS.DEV
             </p>
+
+            <div className="hidden md:block h-3 w-px bg-border dark:bg-white/10" />
+
+            <a
+              href="mailto:contato@guibus.dev"
+              className="text-[10px] font-mono text-muted-foreground hover:text-yellow-600 dark:hover:text-yellow-500 uppercase tracking-[0.3em] font-black transition-colors"
+            >
+              contato@guibus.dev
+            </a>
 
             <div className="hidden md:block h-3 w-px bg-border dark:bg-white/10" />
 
