@@ -179,7 +179,7 @@
   },
   "Metadata": {
     "title": "Guibus | Développeur Full-stack et Designer",
-    "description": "Portfolio d'un Creative Technologist spécialisé dans la construction de produits digitais haute performance et de systèmes évolutifs."
+    "description": "Développeur Full Stack axé sur le Frontend avec environ 4 ans d'expérience en React, Next.js et TypeScript."
   },
   "About": {
     "tag": "À Propos de Moi",
@@ -200,7 +200,10 @@
     "title_top": "Activité sur",
     "title_bottom": "GitHub.",
     "subtitle": "Statistiques en temps réel générées dynamiquement à partir de mes dépôts publics, commits et langages les plus utilisés.",
-    "no_activity": "Aucune activité publique",
-    "no_activity_desc": "Aucun commit public récent trouvé."
+    "contributions_title": "Contributions",
+    "contributions_year": "Année active",
+    "contributions_years_exp": "Années d'expérience",
+    "contributions_projects": "Projets publics",
+    "contributions_cta": "Voir l'historique complet"
   }
 }
