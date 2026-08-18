@@ -10,18 +10,16 @@ export async function ProjectsSection() {
 
   const projects = [
     {
-      id: "atlas",
-      title: tProjects("atlas.title"),
-      category: tProjects("atlas.category"),
-      description: tProjects("atlas.description"),
-      logoId: "atlas",
-      repo: "https://github.com/gui-bus/Atlas-HRMS",
-      demo: "https://atlas-web-pt7t.onrender.com/pt/",
+      id: "bloom",
+      title: tProjects("bloom.title"),
+      category: tProjects("bloom.category"),
+      description: tProjects("bloom.description"),
+      logoId: "bloom",
+      repo: "https://github.com/gui-bus/Bloom",
+      demo: "https://bloom.guibus.dev/",
       tags: [
-        "TypeScript", "Node.js", "Next.js", "React", "Tailwind CSS",
-        "shadcn/ui", "React Query", "Zustand", "Zod", "NestJS",
-        "Prisma", "PostgreSQL", "JWT", "Axios", "Docker",
-        "Vitest", "Playwright"
+        "React", "Next.js", "TypeScript", "Tailwind CSS",
+        "Framer Motion", "Vitest", "Playwright", "Biome"
       ],
     },
     {
@@ -39,16 +37,45 @@ export async function ProjectsSection() {
       ],
     },
     {
-      id: "bloom",
-      title: tProjects("bloom.title"),
-      category: tProjects("bloom.category"),
-      description: tProjects("bloom.description"),
-      logoId: "bloom",
-      repo: "https://github.com/gui-bus/Bloom",
-      demo: "https://bloom.guibus.dev/",
+      id: "scout",
+      title: tProjects("scout.title"),
+      category: tProjects("scout.category"),
+      description: tProjects("scout.description"),
+      logoId: "scout",
+      repo: "https://github.com/gui-bus/Scout",
+      demo: "https://scout.guibus.dev",
+      tags: [
+        "TypeScript", "Node.js", "Next.js", "React", "Tailwind CSS",
+        "React Query", "Zustand", "NestJS", "Prisma", "PostgreSQL",
+        "Docker", "pnpm", "ESLint"
+      ],
+    },
+    {
+      id: "atlas",
+      title: tProjects("atlas.title"),
+      category: tProjects("atlas.category"),
+      description: tProjects("atlas.description"),
+      logoId: "atlas",
+      repo: "https://github.com/gui-bus/Atlas-HRMS",
+      demo: "https://atlas-web-pt7t.onrender.com/pt/",
+      tags: [
+        "TypeScript", "Node.js", "Next.js", "React", "Tailwind CSS",
+        "shadcn/ui", "React Query", "Zustand", "Zod", "NestJS",
+        "Prisma", "PostgreSQL", "JWT", "Axios", "Docker",
+        "Vitest", "Playwright"
+      ],
+    },
+    {
+      id: "magui",
+      title: tProjects("magui.title"),
+      category: tProjects("magui.category"),
+      description: tProjects("magui.description"),
+      logoId: "landingpages",
+      repo: "https://github.com/gui-bus/MAGUI-Landing-Pages",
+      demo: "https://portfolio.magui.studio/",
       tags: [
         "React", "Next.js", "TypeScript", "Tailwind CSS",
-        "Framer Motion", "Vitest", "Playwright", "Biome"
+        "Framer Motion", "ESLint"
       ],
     },
     {
@@ -68,16 +95,15 @@ export async function ProjectsSection() {
       ],
     },
     {
-      id: "magui",
-      title: tProjects("magui.title"),
-      category: tProjects("magui.category"),
-      description: tProjects("magui.description"),
-      logoId: "landingpages",
-      repo: "https://github.com/gui-bus/MAGUI-Landing-Pages",
-      demo: "https://portfolio.magui.studio/",
+      id: "flow",
+      title: tProjects("flow.title"),
+      category: tProjects("flow.category"),
+      description: tProjects("flow.description"),
+      logoId: "flow",
+      repo: "https://github.com/gui-bus/Flow",
       tags: [
-        "React", "Next.js", "TypeScript", "Tailwind CSS",
-        "Framer Motion", "ESLint"
+        "React 19", "TypeScript", "Tailwind CSS v4", "Vite",
+        "WXT Framework", "Chrome Extension", "Manifest V3"
       ],
     },
     {
@@ -89,6 +115,13 @@ export async function ProjectsSection() {
       repo: "https://github.com/gui-bus/TechIcons",
       demo: "https://techicons.guibus.dev/",
       tags: ["Open Source", "SVG Assets", "CI/CD", "Automation"],
+    },
+    {
+      id: "coming_soon",
+      title: tProjects("coming_soon.title"),
+      category: tProjects("coming_soon.category"),
+      description: tProjects("coming_soon.description"),
+      tags: ["Next-Gen Stack", "UI/UX Design", "Clean Code", "Under Development"],
     },
   ];
 

@@ -96,14 +96,14 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System y Biblioteca de Componentes",
-      "description": "Bloom es una biblioteca moderna de componentes React inspirada en shadcn/ui, construida con React, Next.js, Radix UI y Tailwind CSS. El ecosistema reúne más de 70 componentes altamente personalizables, un sistema centralizado de tokens de diseño, documentación interactiva con área de pruebas, su propia CLI para instalación por comandos y pruebas con Vitest, enfocado en accesibilidad y consistencia.",
-      "challenge": "Garantizar la máxima accesibilidad y consistencia visual con una experiencia de instalación rápida.",
-      "solution": "Componentes modulares con Radix UI, estilos con Tailwind CSS v4 y tests con Vitest/Playwright.",
+      "description": "Bloom es una biblioteca de componentes de interfaz (UI) desarrollada con React 19, Next.js 16, Radix UI y Tailwind CSS v4. Enfocada en rendimiento y accesibilidad, centraliza los tokens de diseño en variables CSS y mapas de JavaScript, admitiendo un modelo de distribución híbrido: instalar paquetes compilados vía NPM o copiar código fuente personalizable vía CLI dedicada.",
+      "challenge": "Garantizar la máxima accesibilidad y consistencia visual a la vez que se ofrece flexibilidad mediante un modelo de instalación híbrido.",
+      "solution": "Radix UI para la lógica, Tailwind CSS v4 para los estilos, Framer Motion para animaciones y pruebas con Vitest/Playwright.",
       "results": [
-        "Más de 70 componentes de alta fidelidad con accesibilidad garantizada",
-        "CLI dedicada instalable directamente desde npm",
+        "Más de 97 componentes de alta fidelidade con accesibilidad nativa",
+        "Distribución híbrida: CLI copy-paste y paquete npm compilado",
         "Validación visual y de comportamiento con Playwright y Vitest",
-        "Estructura optimizada para un alto rendimiento de carga"
+        "Fichas de diseño centralizadas mediante variables CSS y mapas de JS"
       ],
       "tags": [
         "Design System",
@@ -156,6 +156,21 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "scout": {
+      "title": "Scout",
+      "category": "Agregador y Rastreador de Empleo",
+      "description": "Scout es un agregador y rastreador de ofertas de empleo de desarrollo de software en tiempo real. Diseñado sobre una arquitectura monorepo moderna, conecta recolectores de múltiples fuentes públicas y APIs corporativas, aplicando clasificadores inteligentes de nivel técnico y motores de extracción automática de metadados directamente de las descripciones de empleo."
+    },
+    "flow": {
+      "title": "Flow",
+      "category": "Extensión de Autocompletado",
+      "description": "Flow es una extensión de Google Chrome que automatiza el llenado de formularios de solicitud de empleo. Con un solo clic, detecta los campos del formulario en la página e inyecta inteligentemente los datos del perfil del usuario, incluyendo información personal, datos de carrera, pretensiones salariales y respuestas de diversidad."
+    },
+    "coming_soon": {
+      "title": "Próximamente",
+      "category": "Próximo Proyecto",
+      "description": "Un nuevo proyecto innovador está en desarrollo. Pronto se compartirán más detalles y características aquí."
     }
   },
   "Footer": {

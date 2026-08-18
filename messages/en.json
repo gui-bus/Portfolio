@@ -96,14 +96,14 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Component Library",
-      "description": "Bloom is a modern React component library inspired by shadcn/ui, built using React, Next.js, Radix UI, and Tailwind CSS. The ecosystem features over 70 highly customizable components, a centralized design tokens system, interactive documentation with a testing playground, its own CLI for command-line installation, and automated tests with Vitest, focusing on accessibility and interface consistency.",
-      "challenge": "Ensure maximum accessibility and visual consistency while offering an effortless installation experience for developers.",
-      "solution": "Modular components built with Radix UI, styled with Tailwind CSS v4, and tested with Vitest/Playwright.",
+      "description": "Bloom is a UI component library built with React 19, Next.js 16, Radix UI, and Tailwind CSS v4. Focused on performance and accessibility, it centralizes design tokens into CSS variables and JavaScript maps. It supports a hybrid distribution model: installing compiled packages via NPM or directly copying customizable component source code via a dedicated CLI.",
+      "challenge": "Ensure maximum accessibility and visual consistency while offering flexibility through a hybrid installation model.",
+      "solution": "Radix UI primitives for structural logic, Tailwind CSS v4 for styling, Framer Motion for smooth animations, and test automation via Vitest and Playwright.",
       "results": [
-        "Over 70 high-fidelity components with guaranteed accessibility",
-        "Dedicated CLI installable directly via npm",
-        "Visual and behavior validation using Playwright and Vitest",
-        "Optimized layout structure for high-speed loading performance"
+        "Over 97 high-fidelity components with native accessibility",
+        "Hybrid distribution: CLI copy-paste and compiled npm package",
+        "Visual and behavioral regression testing with Playwright and Vitest",
+        "Centralized design tokens structure via CSS variables and JS maps"
       ],
       "tags": [
         "Design System",
@@ -156,6 +156,21 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "scout": {
+      "title": "Scout",
+      "category": "Job Aggregator & Tracker",
+      "description": "Scout is a real-time software development job aggregator and tracker. Designed on a modern monorepo architecture, the system connects collectors from multiple public sources and corporate APIs, applying intelligent technical level classifiers and automatic engines to extract relevant metadata directly from job descriptions."
+    },
+    "flow": {
+      "title": "Flow",
+      "category": "Autofill Extension",
+      "description": "Flow is a Google Chrome extension that automates the filling of job application forms. With a single click, Flow detects form fields on the page and intelligently injects your profile data — including personal information, career data, salary expectations, and diversity and inclusion answers."
+    },
+    "coming_soon": {
+      "title": "Coming Soon",
+      "category": "Next Project",
+      "description": "A new innovative project is under development. More details and features will be shared here soon."
     }
   },
   "Footer": {

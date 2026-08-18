@@ -96,14 +96,14 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Biblioteca de Componentes",
-      "description": "O Bloom é uma biblioteca moderna de componentes React inspirada no shadcn/ui, desenvolvida com React, Next.js, Radix UI e Tailwind CSS. O ecossistema reúne mais de 70 componentes altamente customizáveis, sistema centralizado de design tokens, documentação interativa com playground de testes, CLI própria para instalação via linha de comando, e testes com Vitest, focado em acessibilidade e consistência de interfaces.",
-      "challenge": "Garantir a máxima acessibilidade e consistência visual ao mesmo tempo que oferece facilidade de instalação para desenvolvedores.",
-      "solution": "Componentes modulares com Radix UI, estilizados com Tailwind CSS v4 e suíte de testes com Vitest/Playwright.",
+      "description": "O Bloom é uma biblioteca de componentes de interface (UI) desenvolvida com React 19, Next.js 16, Radix UI e Tailwind CSS v4. Focada em performance e acessibilidade, a biblioteca centraliza design tokens em variáveis CSS e mapas JavaScript, suportando o modelo híbrido de distribuição: instalação de pacotes compilados via NPM ou cópia direta do código-fonte dos componentes customizáveis através de CLI dedicada.",
+      "challenge": "Garantir a máxima acessibilidade e consistência visual ao mesmo tempo que oferece flexibilidade através de um modelo híbrido de instalação.",
+      "solution": "Lógica estrutural baseada em Radix UI, estilização com Tailwind CSS v4, animações fluidas com Framer Motion e automação de testes com Vitest/Playwright.",
       "results": [
-        "Mais de 70 componentes de alta fidelidade com acessibilidade garantida",
-        "CLI dedicada instalável diretamente pelo npm",
+        "Mais de 97 componentes de alta fidelidade com acessibilidade nativa",
+        "Distribuição híbrida: CLI copy-paste e pacote compilado via NPM",
         "Validação de design e comportamento com Playwright e Vitest",
-        "Estrutura otimizada para alto desempenho de carregamento"
+        "Arquitetura com tokens centralizados em variáveis CSS semânticas e mapas JS"
       ],
       "tags": [
         "Design System",
@@ -156,6 +156,21 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "scout": {
+      "title": "Scout",
+      "category": "Agregador e Rastreador de Vagas",
+      "description": "O Scout é um agregador e rastreador de vagas de desenvolvimento de software em tempo real. Projetado sobre uma arquitetura de monorepo moderna, o sistema conecta coletores de múltiplas fontes públicas e de APIs corporativas, aplicando classificadores inteligentes de nível técnico e motores automáticos de extração de metadados relevantes diretamente das descrições das vagas."
+    },
+    "flow": {
+      "title": "Flow",
+      "category": "Extensão de Preenchimento Automático",
+      "description": "O Flow é uma extensão para Google Chrome que automatiza o preenchimento de formulários de candidatura a vagas de emprego. Com um único clique, o Flow detecta os campos do formulário na página e injeta os dados do seu perfil de forma inteligente — incluindo informações pessoais, dados de carreira, pretensão salarial e respostas de diversidade e inclusão."
+    },
+    "coming_soon": {
+      "title": "Em breve",
+      "category": "Próximo Projeto",
+      "description": "Um novo projeto inovador está em desenvolvimento. Em breve novos detalhes e funcionalidades serão compartilhados aqui."
     }
   },
   "Footer": {

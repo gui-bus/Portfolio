@@ -96,14 +96,14 @@
     "bloom": {
       "title": "Bloom",
       "category": "Design System & Bibliothèque de Composants",
-      "description": "Bloom est une bibliothèque de composants React moderne inspirée de shadcn/ui, construite avec React, Next.js, Radix UI et Tailwind CSS. L'écosystème réunit plus de 70 composants personnalisables, un système de design tokens, une documentation interactive avec zone de test, sa propre CLI pour installation en ligne de commande, et des tests avec Vitest, axés sur l'accessibilité et la cohérence.",
-      "challenge": "Garantir une accessibilité maximale et une cohérence visuelle tout en offrant une installation ultra-simple.",
-      "solution": "Composants modulaires avec Radix UI, stylisés en Tailwind CSS v4 et testés avec Vitest/Playwright.",
+      "description": "Bloom est une bibliothèque de composants UI développée avec React 19, Next.js 16, Radix UI et Tailwind CSS v4. Axée sur la performance et l'accessibilité, elle centralise les tokens de conception dans des variables CSS et des cartes JavaScript, prenant en charge un modèle de distribution hybride : installation via NPM ou copie de code source via une CLI dédiée.",
+      "challenge": "Garantir une accessibilité maximale et une cohérence visuelle tout en offrant une flexibilité grâce à un modèle d'installation hybride.",
+      "solution": "Primitives Radix UI pour la logique, Tailwind CSS v4 pour le style, Framer Motion pour les animations fluides et automatisation des tests via Vitest/Playwright.",
       "results": [
-        "Plus de 70 composants haute fidélité avec accessibilité garantie",
-        "CLI dédiée installable directement via npm",
-        "Validation visuelle et comportementale avec Playwright et Vitest",
-        "Structure optimisée pour une vitesse de chargement maximale"
+        "Plus de 97 composants haute fidélité avec accessibilité native",
+        "Distribution hybride : CLI copy-paste et package npm compilé",
+        "Tests de régression visuelle et comportementale avec Playwright et Vitest",
+        "Jetons de conception centralisés via des variables CSS et des cartes JS"
       ],
       "tags": [
         "Design System",
@@ -156,6 +156,21 @@
         "Branding",
         "Assets Catalog"
       ]
+    },
+    "scout": {
+      "title": "Scout",
+      "category": "Agrégateur & Suivi d'Emplois",
+      "description": "Scout est un agrégateur et outil de suivi d'offres d'emploi en développement logiciel en temps réel. Conçu sur une architecture monorepo moderne, le système connecte des collecteurs de plusieurs sources publiques et d'API d'entreprise, appliquant des classificateurs intelligents de niveau technique et des moteurs d'extraction de métadonnées pertinents directement à partir des descriptions de postes."
+    },
+    "flow": {
+      "title": "Flow",
+      "category": "Extension de Remplissage Automatique",
+      "description": "Flow est une extension Google Chrome qui automatise le remplissage des formulaires de candidature à un emploi. En un seul clic, elle détecte les champs du formulaire sur la page et injecte intelligemment les données de votre profil, notamment les informations personnelles, professionnelles, les prétentions salariales et les réponses de diversité."
+    },
+    "coming_soon": {
+      "title": "Bientôt",
+      "category": "Projet Suivant",
+      "description": "Un nouveau projet innovant est en cours de développement. Plus de détails et de fonctionnalités seront partagés ici bientôt."
     }
   },
   "Footer": {
