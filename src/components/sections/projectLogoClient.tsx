@@ -25,14 +25,14 @@ export function ProjectLogoClient({ projectId, alt }: ProjectLogoProps) {
 
   const isDark = resolvedTheme === "dark";
   const logoSrc = `/projects/logos/${projectId}/logo_${isDark ? "white" : "black"}.svg`;
-  const isAtlasOrBloom = projectId === "atlas" || projectId === "bloom";
+  const logoWidth = projectId === "nexus" ? 80 : (projectId === "atlas" || projectId === "bloom" ? 96 : 128);
 
   return (
     <div className="relative flex items-center justify-end">
       <Image
         src={logoSrc}
         alt={alt}
-        width={isAtlasOrBloom ? 96 : 128}
+        width={logoWidth}
         height={96}
         priority
         unoptimized
