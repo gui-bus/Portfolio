@@ -76,7 +76,7 @@
     },
     "lume": {
       "title": "Lume",
-      "category": "Ingénierie de Carrière & ATS Haute Performance",
+      "category": "Ingénierie de Carrière & Validateur ATS",
       "description": "Lume est une plateforme complète de création de CV, lettres de motivation et documents professionnels développée avec React, Next.js et TypeScript. Le système permet de créer des mises en page personnalisées, d'organiser l'historique de carrière, de valider des CV pour la compatibilité ATS, d'exporter des PDF de qualité et de gérer différentes versions de fichiers avec support natif multilingue.",
       "challenge": "Développer une interface d'édition en temps réel qui harmonise la complexité des données structurées avec une expérience utilisateur fluide, garantissant une précision chirurgicale dans la génération de documents optimisés.",
       "solution": "Architecture basée sur Next.js et Server Actions, intégrant un motor de rendu PDF en direct, une validation rigoureuse avec Zod/Prisma et une UI minimaliste optimisée par Framer Motion et View Transitions.",
@@ -114,14 +114,14 @@
     },
     "powerfit": {
       "title": "POWER.FIT",
-      "category": "Plateforme Full Stack",
+      "category": "Gestionnaire d'Entraînement Full Stack",
       "description": "POWER.FIT est une plateforme d'entraînement full stack développée avec Next.js, Fastify, TypeScript et PostgreSQL. Le système aide à planifier les exercices et à suivre les routines physiques. L'application utilise le rendu SSR avec gestion d'état frontend, tandis que l'API backend implémente une authentification sécurisée, des validations avec Zod et une persistance via Prisma ORM.",
       "cta_frontend": "Dépôt FRONTEND",
       "cta_backend": "Dépôt BACKEND"
     },
     "magui": {
       "title": "MAGUI.studio",
-      "category": "High-End Visual Strategy & Professional Interface Engineering",
+      "category": "Landing Pages & Ingénierie d'Interface",
       "description": "Uma coleção de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
       "challenge": "Construir um template universal de altíssimo nível que unifique o rigor da engenharia (Next.js 16/React 19) com a sofisticação visual do design de autoridade, garantindo 100/100 em todos os Core Web Vitals.",
       "solution": "Arquitetura baseada em Next.js App Router, Tailwind CSS v4 e i18n prefix-less, incorporando um workflow industrial com geradores Plop.js, testes unitários/E2E e auditoria automatizada de segurança e performance.",

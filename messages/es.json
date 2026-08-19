@@ -76,7 +76,7 @@
     },
     "lume": {
       "title": "Lume",
-      "category": "Ingeniería de Carreras y ATS de Alto Rendimiento",
+      "category": "Ingeniería de Carrera y Validador de ATS",
       "description": "Lume es una plataforma completa para crear currículums, cartas de presentación y documentos profesionales construida con React, Next.js y TypeScript. El sistema permite crear diseños personalizados, organizar el historial laboral, validar currículums para compatibilidad con software de reclutamiento (ATS), exportar archivos en PDF de alta calidad y gestionar versiones de archivos con soporte nativo para múltiples idiomas.",
       "challenge": "Desarrollar una interfaz de edición en tiempo real que armonice la complejidad de los datos estructurados con una experiencia de usuario fluida, garantizando una precisión quirúrgica en la generación de documentos optimizados.",
       "solution": "Arquitectura basada en Next.js y Server Actions, integrando un motor de renderizado de PDF en vivo, validación rigurosa con Zod/Prisma y una interfaz de usuario minimalista potenciada por Framer Motion y View Transitions.",
@@ -114,14 +114,14 @@
     },
     "powerfit": {
       "title": "POWER.FIT",
-      "category": "Plataforma Full Stack",
+      "category": "Gestor de Entrenamientos Full Stack",
       "description": "POWER.FIT es una plataforma full stack de gestión de entrenamiento desarrollada con Next.js, Fastify, TypeScript y PostgreSQL. El sistema ayuda en la planificación de ejercicios y seguimiento de rutinas físicas. La aplicación utiliza SSR con gestión eficiente del estado en el frontend, mientras que la API del backend implementa autenticación segura, validaciones con Zod y persistencia mediante Prisma ORM.",
       "cta_frontend": "Repositorio FRONTEND",
       "cta_backend": "Repositorio BACKEND"
     },
     "magui": {
       "title": "MAGUI.studio",
-      "category": "High-End Visual Strategy & Professional Interface Engineering",
+      "category": "Landing Pages e Ingeniería de Interfaz",
       "description": "Uma coleção de landing pages institucionais desenvolvidas com React, Next.js e TypeScript para variados segmentos do mercado e propostas estéticas. Cada página foi projetada do zero com layouts responsivos, componentes reutilizáveis e estruturação modular de código, aplicando animações dinâmicas e otimizações de performance, focando em usabilidade e conversão por meio de interfaces modernas e consistentes.",
       "challenge": "Construir um template universal de altíssimo nível que unifique o rigor da engenharia (Next.js 16/React 19) com a sofisticação visual do design de autoridade, garantindo 100/100 em todos os Core Web Vitals.",
       "solution": "Arquitetura baseada em Next.js App Router, Tailwind CSS v4 e i18n prefix-less, incorporando um workflow industrial com geradores Plop.js, testes unitários/E2E e auditoria automatizada de segurança e performance.",

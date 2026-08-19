@@ -76,7 +76,7 @@
     },
     "lume": {
       "title": "Lume",
-      "category": "Career Engineering & High-Performance ATS",
+      "category": "Career Engineering & ATS Validator",
       "description": "Lume is a complete platform for creating resumes, cover letters, and professional documents built with React, Next.js, and TypeScript. The system allows creating custom layouts, organizing career history, validating resumes for compatibility with recruiting software (ATS), exporting high-quality PDFs, and managing different file versions with native support for multiple languages and professional documents.",
       "challenge": "Develop a real-time editing interface that harmonizes structured data complexity with a fluid user experience, ensuring surgical precision in optimized document generation.",
       "solution": "Architecture based on Next.js and Server Actions, integrating a live PDF rendering engine, rigorous validation with Zod/Prisma, and a minimalist UI powered by Framer Motion and View Transitions.",
@@ -114,14 +114,14 @@
     },
     "powerfit": {
       "title": "POWER.FIT",
-      "category": "Full Stack Platform",
+      "category": "Full Stack Workout Tracker",
       "description": "POWER.FIT is a full stack training management platform built with Next.js, Fastify, TypeScript, and PostgreSQL. The system helps in planning exercises and tracking physical routines. The web application uses SSR rendering with efficient state management on the frontend, while the robust backend API implements secure authentication, validation with Zod, and database persistence through Prisma ORM.",
       "cta_frontend": "FRONTEND Repository",
       "cta_backend": "BACKEND Repository"
     },
     "magui": {
       "title": "MAGUI.studio",
-      "category": "High-End Visual Strategy & Professional Interface Engineering",
+      "category": "Landing Pages & Interface Engineering",
       "description": "A collection of institutional landing pages developed with React, Next.js, and TypeScript for various market segments and aesthetic styles. Each page was designed from scratch with responsive layouts, reusable components, and modular code structures, applying dynamic animations and performance optimization, focusing on usability and conversion through modern and consistent interfaces.",
       "challenge": "Building an ultra-high-level universal template that unifies engineering rigor (Next.js 16/React 19) with the visual sophistication of authority design, ensuring 100/100 in all Core Web Vitals.",
       "solution": "Architecture based on Next.js App Router, Tailwind CSS v4 and prefix-less i18n, incorporating an industrial workflow with Plop.js generators, unit/E2E testing and automated security and performance auditing.",
