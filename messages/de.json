@@ -114,7 +114,7 @@
     },
     "powerfit": {
       "title": "POWER.FIT",
-      "category": "Full-Stack-Trainingsplaner",
+      "category": "Trainingsplaner",
       "description": "POWER.FIT ist eine Full-Stack-Trainingsverwaltungsplattform mit Next.js, Fastify, TypeScript und PostgreSQL. Das System unterstützt bei der Übungsplanung und Verfolgung körperlicher Aktivitäten. Die Webanwendung nutzt SSR-Rendering mit effizientem Frontend-Zustandsmanagement, während die Backend-API sichere Authentifizierung, Zod-Validierung und Datenbankpersistenz über Prisma ORM implementiert.",
       "cta_frontend": "FRONTEND Repository",
       "cta_backend": "BACKEND Repository"
