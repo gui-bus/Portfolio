@@ -167,10 +167,10 @@
       "category": "Extensión de Autocompletado",
       "description": "Flow es una extensión de Google Chrome que automatiza el llenado de formularios de solicitud de empleo. Con un solo clic, detecta los campos del formulario en la página e inyecta inteligentemente los datos del perfil del usuario, incluyendo información personal, datos de carrera, pretensiones salariales y respuestas de diversidad."
     },
-    "coming_soon": {
-      "title": "Próximamente",
-      "category": "Próximo Proyecto",
-      "description": "Un nuevo proyecto innovador está en desarrollo. Pronto se compartirán más detalles y características aquí."
+    "nexus": {
+      "title": "Nexus",
+      "category": "Boilerplate y CLI de Inicio",
+      "description": "Nexus es un boilerplate profesional fuertemente tipado para sistemas complejos. Basado en React 19 y Next.js 16, viene integrado con la biblioteca Bloom UI, gestión de estado Zustand, cache con TanStack Query y validaciones con React Hook Form + Zod. Incluiye un generador interactivo oficial de CLI para automatizar la configuración del setup con soporte i18n opcional, Docker y CI/CD."
     }
   },
   "Footer": {

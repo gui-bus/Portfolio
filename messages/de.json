@@ -167,10 +167,10 @@
       "category": "Autofill-Erweiterung",
       "description": "Flow ist eine Google Chrome-Erweiterung, die das Ausfüllen von Bewerbungsformularen automatisiert. Mit einem einzigen Klick erkennt Flow Formularfelder auf der Seite und fügt Ihre Profildaten intelligent ein – einschließlich persönlicher Informationen, Karrieredaten, Gehaltsvorstellungen und Antworten zu Diversität."
     },
-    "coming_soon": {
-      "title": "Demnächst",
-      "category": "Nächstes Projekt",
-      "description": "Ein neues innovatives Projekt befindet sich in der Entwicklung. Weitere Details und Funktionen werden bald hier geteilt."
+    "nexus": {
+      "title": "Nexus",
+      "category": "Boilerplate & Starter-CLI",
+      "description": "Nexus ist ein professionelles, stark typisiertes Boilerplate für komplexe Systeme. Basierend auf React 19 und Next.js 16 ist es mit der Bloom-UI-Komponentenbibliothek, Zustand-Zustandsverwaltung, TanStack Query und Validierungen über React Hook Form + Zod integriert. Es enthält ein interaktives CLI-Tool zur automatisierten Einrichtung mit optionalem Support für i18n, Docker und CI/CD."
     }
   },
   "Footer": {

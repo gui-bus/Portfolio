@@ -117,11 +117,17 @@ export async function ProjectsSection() {
       tags: ["Open Source", "SVG Assets", "CI/CD", "Automation"],
     },
     {
-      id: "coming_soon",
-      title: tProjects("coming_soon.title"),
-      category: tProjects("coming_soon.category"),
-      description: tProjects("coming_soon.description"),
-      tags: ["Next-Gen Stack", "UI/UX Design", "Clean Code", "Under Development"],
+      id: "nexus",
+      title: tProjects("nexus.title"),
+      category: tProjects("nexus.category"),
+      description: tProjects("nexus.description"),
+      logoId: "nexus",
+      repo: "https://github.com/gui-bus/Nexus",
+      tags: [
+        "React", "Next.js", "TypeScript", "Tailwind CSS", "Bloom UI",
+        "Zustand", "TanStack Query", "React Hook Form", "Zod", "next-intl",
+        "Docker", "Vitest", "Playwright", "Husky"
+      ],
     },
   ];
 

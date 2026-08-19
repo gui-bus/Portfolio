@@ -167,10 +167,10 @@
       "category": "Extension de Remplissage Automatique",
       "description": "Flow est une extension Google Chrome qui automatise le remplissage des formulaires de candidature à un emploi. En un seul clic, elle détecte les champs du formulaire sur la page et injecte intelligemment les données de votre profil, notamment les informations personnelles, professionnelles, les prétentions salariales et les réponses de diversité."
     },
-    "coming_soon": {
-      "title": "Bientôt",
-      "category": "Projet Suivant",
-      "description": "Un nouveau projet innovant est en cours de développement. Plus de détails et de fonctionnalités seront partagés ici bientôt."
+    "nexus": {
+      "title": "Nexus",
+      "category": "Boilerplate & CLI d'Initialisation",
+      "description": "Nexus est un boilerplate professionnel fortement typé pour systèmes complexes. Basé sur React 19 et Next.js 16, il est intégré avec la bibliothèque Bloom UI, la gestion d'état Zustand, TanStack Query et les validations avec React Hook Form + Zod. Il inclut un outil CLI interactif officiel pour automatiser la configuration du setup avec support optionnel d'i18n, Docker et CI/CD."
     }
   },
   "Footer": {
